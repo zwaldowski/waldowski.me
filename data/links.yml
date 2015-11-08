@@ -1,0 +1,7 @@
+---
+- name: GitHub
+  icon: github
+  url: https://github.com/zwaldowski
+- name: Twitter
+  icon: twitter
+  url: https://twitter.com/zwaldowski
