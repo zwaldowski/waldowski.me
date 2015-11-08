@@ -11,6 +11,10 @@
 
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag  "all" %>
+
+    <% data.meta.each do |k, v| %>
+    <meta name="<%= k %>" value="<%= v %>">
+    <% end %>
   </head>
 
   <body class="<%= page_classes %>">
