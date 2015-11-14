@@ -39,9 +39,9 @@
 helpers do
 
   def link_icon_fallback(text, link, icon_name)
-    link_to(link, options = { :class => "icon-fallback" }) do
+    link_to(link, options = { :class => "icon-fallback", :title => text, 'data-toggle' => "tooltip" }) do
       [
-        content_tag(:span, "", 'aria-hidden' => 'true', :class => "icon icon-#{icon_name}"),
+        content_tag(:span, "", :class => "icon icon-#{icon_name}", 'aria-hidden' => 'true'),
         content_tag(:span, text, :class => "text")
       ].join("")
     end
@@ -50,6 +50,8 @@ helpers do
 end
 
 require 'bootstrap'
+require 'rails-assets-jquery'
+require 'rails-assets-tether'
 
 set :css_dir, 'styles'
 set :js_dir, 'scripts'

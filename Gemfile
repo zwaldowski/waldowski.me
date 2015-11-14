@@ -12,3 +12,8 @@ gem "middleman-fontcustom", :github => 'zwaldowski/middleman-fontcustom'
 
 # Twitter Bootstrap
 gem 'bootstrap', '~> 4.0.0.alpha1'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-jquery'
+  gem 'rails-assets-tether'
+end
