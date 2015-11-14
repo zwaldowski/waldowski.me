@@ -36,11 +36,18 @@
 # activate :automatic_image_sizes
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+
+  def link_icon_fallback(text, link, icon_name)
+    link_to(link, options = { :class => "icon-fallback" }) do
+      [
+        content_tag(:span, "", 'aria-hidden' => 'true', :class => "icon icon-#{icon_name}"),
+        content_tag(:span, text, :class => "text")
+      ].join("")
+    end
+  end
+
+end
 
 require 'bootstrap'
 
@@ -56,5 +63,13 @@ configure :build do
 end
 
 configure :development do
+  activate :fontcustom do |fc|
+    fc.font_name = 'icons'
+    fc.source_dir = 'assets/icons'
+    fc.css_dir = 'source/styles'
+    fc.templates = 'scss icon-preload.js'
+    fc.template_dirs = { 'icon-preload.js' => 'source/scripts' }
+  end
+
   activate :livereload
 end
