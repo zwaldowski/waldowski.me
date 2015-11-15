@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
 # Static site generator
-gem 'middleman', "~>3.4.0"
+gem 'middleman', '~>3.4.0'
 
 # Live-reloading plugin
-gem 'middleman-livereload', "~> 3.1.0"
+gem 'middleman-livereload', '~> 3.1.0'
 
 # Generate icons
 gem 'fontcustom', :github => 'zwaldowski/fontcustom'
@@ -17,7 +17,8 @@ gem 'middleman-autoprefixer'
 gem 'bootstrap', '~> 4.0.0.alpha1'
 
 # Sync with S3 and CloudFront
-gem 'middleman-s3_sync', "~> 3.x"
+gem 'middleman-s3_sync', '~> 3.x'
+gem 'middleman-cloudfront'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether'
