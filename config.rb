@@ -58,6 +58,8 @@ set :js_dir, 'scripts'
 set :images_dir, 'images'
 set :partials_dir, 'shared'
 
+page "robots.txt", :layout => false
+
 configure :development do
   activate :fontcustom do |fc|
     fc.font_name = 'icons'
