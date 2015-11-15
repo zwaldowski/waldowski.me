@@ -1,14 +1,17 @@
 source 'https://rubygems.org'
 
 # Static site generator
-gem "middleman", "~>3.4.0"
+gem 'middleman', "~>3.4.0"
 
 # Live-reloading plugin
-gem "middleman-livereload", "~> 3.1.0"
+gem 'middleman-livereload', "~> 3.1.0"
 
 # Generate icons
-gem "fontcustom", :github => 'zwaldowski/fontcustom'
-gem "middleman-fontcustom", :github => 'zwaldowski/middleman-fontcustom'
+gem 'fontcustom', :github => 'zwaldowski/fontcustom'
+gem 'middleman-fontcustom', :github => 'zwaldowski/middleman-fontcustom'
+
+# CSS cleanup
+gem 'middleman-autoprefixer'
 
 # Twitter Bootstrap
 gem 'bootstrap', '~> 4.0.0.alpha1'

@@ -24,7 +24,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    autoprefixer-rails (6.1.0.1)
+    autoprefixer-rails (6.0.3)
       execjs
       json
     bootstrap (4.0.0.alpha1)
@@ -83,6 +83,9 @@ GEM
       middleman-sprockets (>= 3.1.2)
       sass (>= 3.4.0, < 4.0)
       uglifier (~> 2.5)
+    middleman-autoprefixer (2.6.1)
+      autoprefixer-rails (~> 6.0.1)
+      middleman-core (>= 3.3.3)
     middleman-core (3.4.0)
       activesupport (~> 4.1)
       bundler (~> 1.1)
@@ -157,6 +160,7 @@ DEPENDENCIES
   bootstrap (~> 4.0.0.alpha1)
   fontcustom!
   middleman (~> 3.4.0)
+  middleman-autoprefixer
   middleman-fontcustom!
   middleman-livereload (~> 3.1.0)
   rails-assets-jquery!

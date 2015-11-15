@@ -58,12 +58,6 @@ set :js_dir, 'scripts'
 set :images_dir, 'images'
 set :partials_dir, 'shared'
 
-configure :build do
-  activate :minify_css
-  activate :minify_javascript
-  activate :asset_hash
-end
-
 configure :development do
   activate :fontcustom do |fc|
     fc.font_name = 'icons'
@@ -74,4 +68,11 @@ configure :development do
   end
 
   activate :livereload
+end
+
+configure :build do
+  activate :autoprefixer
+  activate :minify_css
+  activate :minify_javascript
+  activate :asset_hash
 end
