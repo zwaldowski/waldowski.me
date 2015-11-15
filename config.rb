@@ -39,7 +39,7 @@
 helpers do
 
   def link_icon_fallback(text, link, icon_name)
-    link_to(link, options = { :class => "icon-fallback", :title => text, 'data-toggle' => "tooltip" }) do
+    link_to(link, options = { :class => "icon-fallback", 'data-tooltip' => text }) do
       [
         content_tag(:span, "", :class => "icon icon-#{icon_name}", 'aria-hidden' => 'true'),
         content_tag(:span, text, :class => "text")

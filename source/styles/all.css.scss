@@ -2,12 +2,12 @@
 
 @import "custom";
 @import "icons";
+@import "tooltip-theme";
 
 @import "bootstrap-reboot";
 @import "bootstrap/mixins/reset-text";
 @import "bootstrap/mixins/border-radius";
 @import "bootstrap/mixins/breakpoints";
-@import "bootstrap/tooltip";
 @import "bootstrap/jumbotron";
 @import "bootstrap/animation";
 
@@ -120,13 +120,4 @@ html, body {
             font-size: 2rem;
         }
     }
-}
-
-.tooltip {
-    font-size: 1.1rem;
-}
-
-.tooltip-inner {
-    box-shadow: .4rem .4rem .8rem 0 rgba(0, 0, 0, 0.3);
-    text-shadow: 0 -.1rem 0 0 #000;
 }

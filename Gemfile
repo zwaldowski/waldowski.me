@@ -17,6 +17,7 @@ gem 'middleman-autoprefixer'
 gem 'bootstrap', '~> 4.0.0.alpha1'
 
 source 'https://rails-assets.org' do
-  gem 'rails-assets-jquery'
   gem 'rails-assets-tether'
+  gem 'rails-assets-drop'
+  gem 'rails-assets-tether-tooltip'
 end
