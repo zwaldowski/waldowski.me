@@ -50,8 +50,7 @@ helpers do
 end
 
 require 'bootstrap'
-require 'rails-assets-jquery'
-require 'rails-assets-tether'
+require 'rails-assets-tether-tooltip'
 
 set :css_dir, 'styles'
 set :js_dir, 'scripts'
