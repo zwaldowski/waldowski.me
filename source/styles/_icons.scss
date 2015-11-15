@@ -23,16 +23,22 @@
 [data-icon]:before { content: attr(data-icon); }
 
 [data-icon]:before,
-.icon-arrow-circle-left:before,
-.icon-arrow-circle-o-left:before,
-.icon-arrow-circle-o-right:before,
-.icon-arrow-circle-right:before,
+.icon-arrow-left:before,
+.icon-arrow-right:before,
 .icon-calendar:before,
 .icon-chevron-down:before,
-.icon-facebook-square:before,
+.icon-circle-left:before,
+.icon-circle-right:before,
+.icon-eye:before,
+.icon-facebook:before,
+.icon-feed:before,
 .icon-github:before,
-.icon-instapaper:before,
-.icon-rss:before,
+.icon-instagram:before,
+.icon-key:before,
+.icon-linkedin:before,
+.icon-mail:before,
+.icon-profile:before,
+.icon-tag:before,
 .icon-tags:before,
 .icon-twitter:before {
   display: inline-block;
@@ -49,28 +55,40 @@
   font-smoothing: antialiased;
 }
 
-.icon-arrow-circle-left:before { content: "\f100"; }
-.icon-arrow-circle-o-left:before { content: "\f101"; }
-.icon-arrow-circle-o-right:before { content: "\f102"; }
-.icon-arrow-circle-right:before { content: "\f103"; }
-.icon-calendar:before { content: "\f104"; }
-.icon-chevron-down:before { content: "\f105"; }
-.icon-facebook-square:before { content: "\f106"; }
-.icon-github:before { content: "\f107"; }
-.icon-instapaper:before { content: "\f108"; }
-.icon-rss:before { content: "\f109"; }
-.icon-tags:before { content: "\f10a"; }
-.icon-twitter:before { content: "\f10b"; }
+.icon-arrow-left:before { content: "\f11d"; }
+.icon-arrow-right:before { content: "\f11e"; }
+.icon-calendar:before { content: "\f10b"; }
+.icon-chevron-down:before { content: "\f10c"; }
+.icon-circle-left:before { content: "\f10d"; }
+.icon-circle-right:before { content: "\f10e"; }
+.icon-eye:before { content: "\f124"; }
+.icon-facebook:before { content: "\f110"; }
+.icon-feed:before { content: "\f111"; }
+.icon-github:before { content: "\f120"; }
+.icon-instagram:before { content: "\f113"; }
+.icon-key:before { content: "\f125"; }
+.icon-linkedin:before { content: "\f119"; }
+.icon-mail:before { content: "\f122"; }
+.icon-profile:before { content: "\f115"; }
+.icon-tag:before { content: "\f116"; }
+.icon-tags:before { content: "\f117"; }
+.icon-twitter:before { content: "\f118"; }
 
-$font-icons-arrow-circle-left: "\f100";
-$font-icons-arrow-circle-o-left: "\f101";
-$font-icons-arrow-circle-o-right: "\f102";
-$font-icons-arrow-circle-right: "\f103";
-$font-icons-calendar: "\f104";
-$font-icons-chevron-down: "\f105";
-$font-icons-facebook-square: "\f106";
-$font-icons-github: "\f107";
-$font-icons-instapaper: "\f108";
-$font-icons-rss: "\f109";
-$font-icons-tags: "\f10a";
-$font-icons-twitter: "\f10b";
+$font-icons-arrow-left: "\f11d";
+$font-icons-arrow-right: "\f11e";
+$font-icons-calendar: "\f10b";
+$font-icons-chevron-down: "\f10c";
+$font-icons-circle-left: "\f10d";
+$font-icons-circle-right: "\f10e";
+$font-icons-eye: "\f124";
+$font-icons-facebook: "\f110";
+$font-icons-feed: "\f111";
+$font-icons-github: "\f120";
+$font-icons-instagram: "\f113";
+$font-icons-key: "\f125";
+$font-icons-linkedin: "\f119";
+$font-icons-mail: "\f122";
+$font-icons-profile: "\f115";
+$font-icons-tag: "\f116";
+$font-icons-tags: "\f117";
+$font-icons-twitter: "\f118";
