@@ -212,8 +212,8 @@
 
     var doc = w.document,
         ref,
-        css = ['.__FONT_NAME__-active .icon-fallback .icon { display: inline-block; }',
-            '.__FONT_NAME__-active .icon-fallback .text { clip: rect(0 0 0 0); overflow: hidden; position: absolute; height: 1px; width: 1px; }'];
+        css = ['.__FONT_NAME__-active .icon-fallback [data-icon] { display: inline-block; }',
+            '.__FONT_NAME__-active .icon-fallback span { clip: rect(0 0 0 0); overflow: hidden; position: absolute; height: 1px; width: 1px; }'];
 
     function addEvent( type, callback ) {
         if( 'addEventListener' in w ) {

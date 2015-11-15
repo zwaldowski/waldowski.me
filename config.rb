@@ -38,11 +38,15 @@
 # Methods defined in the helpers block are available in templates
 helpers do
 
+  def icon_codepoint(icon_name)
+    data.icons[icon_name]
+  end
+
   def link_icon_fallback(text, link, icon_name)
-    link_to(link, options = { :class => "icon-fallback", 'data-tooltip' => text }) do
+    link_to(link, options = { :class => 'icon-fallback', 'data-tooltip' => text }) do
       [
-        content_tag(:span, "", :class => "icon icon-#{icon_name}", 'aria-hidden' => 'true'),
-        content_tag(:span, text, :class => "text")
+        content_tag(:i, '', 'aria-hidden' => 'true', 'data-icon' => icon_codepoint(icon_name)),
+        content_tag(:span, text, :class => 'text')
       ].join("")
     end
   end
@@ -60,15 +64,17 @@ set :partials_dir, 'shared'
 page "robots.txt", :layout => false
 
 configure :development do
+  activate :livereload
   activate :fontcustom do |fc|
     fc.font_name = 'icons'
     fc.source_dir = 'assets/icons'
     fc.css_dir = 'source/styles'
-    fc.templates = 'scss icon-preload.js'
-    fc.template_dirs = { 'icon-preload.js' => 'source/scripts' }
+    fc.templates = 'icons.yml _icon-custom.scss icon-preload.js'
+    fc.template_dirs = {
+      'icons.yml' => 'data',
+      'icon-preload.js' => 'source/scripts'
+    }
   end
-
-  activate :livereload
 end
 
 configure :build do

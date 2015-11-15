@@ -1,0 +1,2 @@
+---<% @glyphs.each do |name, value| %>
+"<%= name.to_s %>": "\u<%= value[:codepoint].to_s(16) %>"<% end %>

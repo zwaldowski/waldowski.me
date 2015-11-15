@@ -1,0 +1,10 @@
+//
+// Icon Font: <%= font_name %>
+//
+
+<%= font_face(path: @font_path_alt) %>
+
+[data-icon]:before {
+    content: attr(data-icon);
+    <%= glyph_properties %>
+}

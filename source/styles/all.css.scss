@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @import "custom";
-@import "icons";
+@import "icon-custom";
 @import "tooltip-theme";
 
 @import "bootstrap-reboot";
@@ -17,7 +17,7 @@ html, body {
 
 .icon-fallback {
 
-    .icon {
+    [data-icon] {
         display: none;
     }
 
