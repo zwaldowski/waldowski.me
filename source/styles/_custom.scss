@@ -52,9 +52,9 @@ $link-hover-decoration:      none;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:     "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:     'Fira Sans', 'Helvetica Neue', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 $font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
-$font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-monospace:      'Fira Mono', Menlo, Monaco, Consolas, "Courier New", Courier, monospace;
 $font-family-base:           $font-family-sans-serif !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
