@@ -69,7 +69,7 @@ configure :development do
     fc.font_name = 'icons'
     fc.source_dir = 'assets/icons'
     fc.css_dir = 'source/styles'
-    fc.templates = 'icons.yml _icon-custom.scss icon-preload.js'
+    fc.templates = 'icons.yml _icon-custom.scss _icon-preload.js'
     fc.template_dirs = {
       'icons.yml' => 'data',
       'icon-preload.js' => 'source/scripts'
