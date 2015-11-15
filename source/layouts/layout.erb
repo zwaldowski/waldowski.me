@@ -9,7 +9,6 @@
     <meta name="<%= k %>" value="<%= v %>">
     <% end %>
     <%= stylesheet_link_tag "all" %>
-    <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Fira+Sans:400,700italic,700,400italic" %>
   </head>
   <body class="<%= page_classes %>">
     <%= partial "header" %>
@@ -19,6 +18,7 @@
       </div>
     </main>
     <%= javascript_include_tag "all" %>
+    <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Fira+Sans:400,700italic,700,400italic" %>
   </body>
   <% if (!current_page.data.no_footer || false) %><%= partial "footer" %><% end %>
 </html>
