@@ -61,7 +61,7 @@ set :js_dir, 'scripts'
 set :images_dir, 'images'
 set :partials_dir, 'shared'
 
-page "robots.txt", :layout => false
+page "humans.txt", :layout => false
 
 configure :development do
   activate :livereload
