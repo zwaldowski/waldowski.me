@@ -4,10 +4,13 @@
 @import "icon-custom";
 @import "tooltip-theme";
 
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
 @import "bootstrap-reboot";
-@import "bootstrap/mixins/reset-text";
-@import "bootstrap/mixins/border-radius";
-@import "bootstrap/mixins/breakpoints";
+@import "bootstrap/images";
+@import "bootstrap/type";
+@import "bootstrap/grid";
+@import "bootstrap/utilities";
 @import "bootstrap/jumbotron";
 @import "bootstrap/animation";
 
@@ -24,6 +27,7 @@ html, body {
 }
 
 #site-head {
+    background-color: $gray-dark;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,13 +87,22 @@ html, body {
                 color: $link-hover-color;
             }
         }
+    }
+}
 
-        @include media-breakpoint-up(sm) {
+.icons-active #site-head {
+
+    .social-links {
+
+        @include media-breakpoint-up(md) {
             position: absolute;
             right: 5%;
-            top: 35%;
+            top: 22%;
+            max-width: 50%;
         }
+
     }
+
 }
 
 #site-head.hero {
@@ -125,4 +138,39 @@ html, body {
             font-size: 2rem;
         }
     }
+}
+
+#site-footer {
+    background-color: $gray-light;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 5rem;
+    padding: 3rem 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    bottom: 0;
+    margin-bottom: 0;
+
+    section {
+        margin: 1rem 1rem;
+
+        @include media-breakpoint-up(sm) {
+            margin: 0;
+        }
+    }
+
+    a {
+        font-style: italic;
+        text-decoration: none;
+    }
+}
+
+.error {
+
+    #site-footer {
+        margin-top: 0
+    }
+
 }

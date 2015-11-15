@@ -4,7 +4,7 @@
 
 $gray-dark:                 #222;
 $gray:                      #55595c !default;
-$gray-light:                #818a91 !default;
+$gray-light:                #a09da6 !default;
 $gray-lighter:              #ddd;
 $gray-lightest:             #f7f7f9 !default;
 
@@ -107,7 +107,7 @@ $hr-border-width:             $border-width !default;
 // Jumbotron
 
 $jumbotron-padding:              1rem;
-$jumbotron-bg:                   $gray-dark;
+$jumbotron-bg:                   $gray-lighter;
 
 // Tooltips
 
