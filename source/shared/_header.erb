@@ -1,5 +1,5 @@
 <!--  hero -->
-<header id="site-head" class="jumbotron<% if (current_page.data.hero || false) %> hero animated fadeIn<% end %>"<% if !data.settings.cover_image.nil? %> style="background-image: url(<%= url_for(data.settings.cover_image) %>)"<% end %>>
+<header id="site-head" class="jumbotron<% if (current_page.data.hero || false) %> hero animated fadeIn<% end %>">
     <div class="container">
         <h1 class="blog-title"><%= data.settings.default_title %></h1>
         <% if !data.settings.site_description.nil? %><h2 class="blog-description"><%= data.settings.site_description %></h2><% end %>

@@ -15,5 +15,5 @@
   Site: http://laketa.com
 - Typography: Fira Sans (Carrois)
   Site: http://www.carrois.com/en/fira-4-1/
-- Artwork: Aaron Olive (@AaronOlive)
-  Site: http://aaronolive.deviantart.com
+- Artwork: Danny Fischer (@dnyfsr)
+  Site: https://danny.fm/

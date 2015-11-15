@@ -27,11 +27,16 @@ html, body {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: image_url("cover-image-mini.jpg");
     width: 100%;
     color: $gray-lighter;
     font-weight: 700;
     text-align: center;
     @include border-radius(0);
+
+    @include media-breakpoint-up(md) {
+        background-image: image_url("cover-image.jpg");
+    }
 
     .blog-title {
         font-size: 3rem;
