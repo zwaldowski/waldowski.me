@@ -51,6 +51,12 @@ helpers do
     end
   end
 
+  def defer_load_webfont_tags(families)
+    html = content_tag :script, "WebFontConfig={google:{families:[\"#{families}\"]}},function(){var e=document.createElement(\"script\");e.src=\"https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js\",e.type=\"text/javascript\",e.async=\"true\";var t=document.getElementsByTagName(\"script\")[0];t.parentNode.insertBefore(e,t)}();", :type => 'text/javascript'
+    html << content_tag(:noscript, stylesheet_link_tag("https://fonts.googleapis.com/css?family=#{families}"))
+    html
+  end
+
 end
 
 require 'bootstrap'
