@@ -107,3 +107,8 @@ end
 after_s3_sync do |files_by_status|
   cdn_invalidate(files_by_status[:updated])
 end
+
+after_configuration do
+  caching_policy 'text/html',    :s_maxage => 31_536_000, :max_age => 0, :must_revalidate => true
+  default_caching_policy         :max_age => 31_536_000, public: true, must_revalidate: true, proxy_revalidate: true
+end
