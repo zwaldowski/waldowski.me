@@ -94,16 +94,16 @@ end
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                     = 'waldowski.me'
   s3_sync.region                     = 'us-east-1'
-  s3_sync.aws_access_key_id          = ENV['AWS_ACCESS_KEY']
-  s3_sync.aws_secret_access_key      = ENV['AWS_SECRET']
+  s3_sync.aws_access_key_id          = ENV['AWS_ACCESS_KEY_ID']
+  s3_sync.aws_secret_access_key      = ENV['AWS_SECRET_ACCESS_KEY']
 end
 
-activate :cloudfront do |cf|
-  cf.access_key_id = ENV['AWS_ACCESS_KEY']
-  cf.secret_access_key = ENV['AWS_SECRET']
-  cf.distribution_id = 'E1SJ0WWQZT7G4Z'
+activate :cdn do |cdn|
+  cdn.cloudfront = {
+    distribution_id: 'E1SJ0WWQZT7G4Z'
+  }
 end
 
 after_s3_sync do |files_by_status|
-  invalidate files_by_status[:updated]
+  cdn_invalidate(files_by_status[:updated])
 end
