@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 @import "custom";
-@import "icon-custom";
 @import "tooltip-theme";
 
 @import "bootstrap/variables";
@@ -18,12 +17,10 @@ html, body {
     height: 100%;
 }
 
-.icon-fallback {
-
-    [data-icon] {
-        display: none;
-    }
-
+.svgcon {
+    display: inline-block;
+    vertical-align: text-top;
+    fill: currentColor
 }
 
 #site-head {
@@ -74,6 +71,10 @@ html, body {
         transition: background-color 0.54365s;
         font-size: 1.6rem;
         line-height: 1.1em;
+
+        .svgcon {
+            height: 1.6em;
+        }
 
         &:hover {
             background-color: rgba(255, 255, 255, 1.0);
@@ -144,6 +145,10 @@ html, body {
 
         @include media-breakpoint-up(sm) {
             font-size: 2rem;
+
+            .svgcon {
+                height: 2rem;
+            }
         }
     }
 }

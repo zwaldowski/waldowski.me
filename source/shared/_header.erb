@@ -5,7 +5,7 @@
         <% if !data.settings.site_description.nil? %><h2 class="blog-description"><%= data.settings.site_description %></h2><% end %>
         <p class="social-links">
             <% data.links.each do |link| %>
-            <%= link_icon_fallback link.name, link.url, link.icon %>
+            <%= link_icon_only link.name, link.url, link.icon, :'data-tooltip-position' => 'bottom center' %>
             <% end %>
         </p>
     </div>

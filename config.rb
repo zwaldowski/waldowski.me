@@ -1,53 +1,31 @@
-###
-# Compass
-###
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", :layout => false
-#
-# With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
-# Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
-#  :which_fake_page => "Rendering a fake page with a local variable" }
-
-###
-# Helpers
-###
-
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
+require "bootstrap"
+require "rails-assets-tether-tooltip"
+require "nokogiri"
 
 # Methods defined in the helpers block are available in templates
 helpers do
 
-  def icon_codepoint(icon_name)
-    data.icons[icon_name]
+  def inline_svg(icon_name)
+    root = Middleman::Application.root
+    icon_file = File.join(root, 'assets/icons', "#{icon_name}.svg")
+    icon = File.open(icon_file) { |f| Nokogiri::XML(f) }
+    icon.remove_namespaces!
+
+    svg = icon.at_css "svg"
+    svg["aria-hidden"] = :true
+    svg["class"] = "svgcon svgcon-#{icon_name.to_s.dasherize}"
+    svg["role"] = :img
+    svg.delete "width"
+    svg.delete "height"
+
+    svg
   end
 
-  def link_icon_fallback(text, link, icon_name)
-    link_to(link, options = { :class => 'icon-fallback', 'data-tooltip' => text }) do
-      [
-        content_tag(:i, '', 'aria-hidden' => 'true', 'data-icon' => icon_codepoint(icon_name)),
-        content_tag(:span, text, :class => 'text')
-      ].join("")
+  def link_icon_only(text, link, icon_name, options={})
+    options['data-tooltip'] = text
+    options['aria-label'] = text
+    link_to(link, options) do
+      inline_svg(icon_name).to_s
     end
   end
 
@@ -59,8 +37,6 @@ helpers do
 
 end
 
-require 'bootstrap'
-require 'rails-assets-tether-tooltip'
 
 set :css_dir, 'styles'
 set :js_dir, 'scripts'
@@ -71,16 +47,6 @@ page "humans.txt", :layout => false
 
 configure :development do
   activate :livereload
-  activate :fontcustom do |fc|
-    fc.font_name = 'icons'
-    fc.source_dir = 'assets/icons'
-    fc.css_dir = 'source/styles'
-    fc.templates = 'icons.yml _icon-custom.scss _icon-preload.js'
-    fc.template_dirs = {
-      'icons.yml' => 'data',
-      'icon-preload.js' => 'source/scripts'
-    }
-  end
 end
 
 configure :build do
