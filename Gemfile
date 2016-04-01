@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 
 # Static site generator
-gem 'middleman', '~>3.4.0'
+gem 'middleman', '>= 4.0.0'
 
 # Live-reloading plugin
-gem 'middleman-livereload', '~> 3.1.0'
+gem 'middleman-livereload'
+
+# Compass/Rails compat
+gem 'middleman-sprockets', '~> 4.0.0.rc'
 
 # CSS cleanup
 gem 'middleman-autoprefixer'
@@ -12,8 +15,8 @@ gem 'middleman-autoprefixer'
 # Twitter Bootstrap
 gem 'bootstrap', '~> 4.0.0.alpha3'
 
-# Sync with S3 and CloudFront
-gem 'middleman-s3_sync', '~> 3.x'
+# Sync with S3
+gem 'middleman-s3_sync'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether'

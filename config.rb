@@ -41,9 +41,10 @@ end
 set :css_dir, 'styles'
 set :js_dir, 'scripts'
 set :images_dir, 'images'
-set :partials_dir, 'shared'
 
-page "humans.txt", :layout => false
+page '/*.xml', layout: false
+page '/*.json', layout: false
+page '/*.txt', layout: false
 
 configure :development do
   activate :livereload
