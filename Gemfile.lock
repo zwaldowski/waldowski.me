@@ -338,7 +338,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap (~> 4.0.0.alpha1)
+  bootstrap (~> 4.0.0.alpha3)
   middleman (~> 3.4.0)
   middleman-autoprefixer
   middleman-cdn

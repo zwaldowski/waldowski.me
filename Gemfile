@@ -10,7 +10,7 @@ gem 'middleman-livereload', '~> 3.1.0'
 gem 'middleman-autoprefixer'
 
 # Twitter Bootstrap
-gem 'bootstrap', '~> 4.0.0.alpha1'
+gem 'bootstrap', '~> 4.0.0.alpha3'
 
 # Sync with S3 and CloudFront
 gem 'middleman-s3_sync', '~> 3.x'
