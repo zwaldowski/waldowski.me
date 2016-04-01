@@ -55,17 +55,4 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
-  activate :gzip, exts: %w(.js .css .html .svg)
-end
-
-activate :s3_sync do |s3_sync|
-  s3_sync.bucket                     = 'waldowski.me'
-  s3_sync.region                     = 'us-east-1'
-  s3_sync.aws_access_key_id          = ENV['AWS_ACCESS_KEY_ID']
-  s3_sync.aws_secret_access_key      = ENV['AWS_SECRET_ACCESS_KEY']
-end
-
-after_configuration do
-  caching_policy 'text/html',    :s_maxage => 31_536_000, :max_age => 0, :must_revalidate => true
-  default_caching_policy         :max_age => 31_536_000, public: true, must_revalidate: true, proxy_revalidate: true
 end

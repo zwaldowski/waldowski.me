@@ -15,9 +15,6 @@ gem 'middleman-autoprefixer'
 # Twitter Bootstrap
 gem 'bootstrap', '~> 4.0.0.alpha3'
 
-# Sync with S3
-gem 'middleman-s3_sync'
-
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether'
   gem 'rails-assets-drop'
