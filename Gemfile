@@ -14,7 +14,6 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 
 # Sync with S3 and CloudFront
 gem 'middleman-s3_sync', '~> 3.x'
-gem 'middleman-cdn'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether'
