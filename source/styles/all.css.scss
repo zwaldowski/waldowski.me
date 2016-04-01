@@ -65,18 +65,17 @@ html, body {
     }
 
     .social-links {
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.3);
         display: inline-block;
         @include border-radius(0.8rem);
-        opacity: 0.3;
         margin: 0;
         padding: 0.8rem;
-        transition: opacity 0.54365s;
+        transition: background-color 0.54365s;
         font-size: 1.6rem;
         line-height: 1.1em;
 
         &:hover {
-            opacity: 1;
+            background-color: rgba(255, 255, 255, 1.0);
         }
 
         a {
@@ -87,6 +86,14 @@ html, body {
                 color: $link-hover-color;
             }
         }
+    }
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    #site-head .social-links {
+        background-color: clear;
+        -webkit-backdrop-filter: blur(5px) grayscale(20%) brightness(100%);
+        backdrop-filter: blur(5px) grayscale(20%) brightness(100%);
     }
 }
 
