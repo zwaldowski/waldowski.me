@@ -7,22 +7,20 @@ email:
   - home: zach@waldowski.me
     preferred: true
   - work: zachary@bignerdranch.com
-  - home: zwaldowski@gmail.com
 phone:
   - iPhone: +1 (843) 333-6836
     preferred: true
-  - other: +1 (843) 608-8399
 postalcode: 30307
 city: Atlanta
 province: GA
 country: United States
 social:
-  - twitter: https://twitter.com/zwaldowski
-  - facebook: http://facebook.com/zwaldowski
-  - flickr: zwaldowskihttp://www.flickr.com/photos/zwaldowski
-  - linkedin: https://www.linkedin.com/in/zwaldowski
+  - Twitter: https://twitter.com/zwaldowski
+  - Facebook: http://facebook.com/zwaldowski
+  - LinkedIn: https://linkedin.com/in/zwaldowski
+  - GitHub: https://github.com/zwaldowski
   - Game Center: http://link.gc.apple.com/players/G:189719297
-  - Nintendo: 2723-9324-0592
+  - Nintendo: zwaldowski
 url: https://waldowski.me
 birthday: 1994-05-05
 im:
@@ -30,7 +28,3 @@ im:
     type: Facebook
     preferred: true
   - home: skype:zwaldowski
-  - home: xmpp:zach@waldowski.me
-  - work: xmpp:zachary@bignerdranch.com
-  - work: aim:z.waldowski
-  - home: ymsgr:zwaldowski
