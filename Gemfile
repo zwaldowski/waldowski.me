@@ -1,19 +1,19 @@
 source 'https://rubygems.org'
 
 # Static site generator
-gem 'middleman', '>= 4.0.0'
+gem 'middleman', '~> 4.2'
 
 # Live-reloading plugin
 gem 'middleman-livereload'
 
 # Compass/Rails compat
-gem 'middleman-sprockets', '~> 4.0.0.rc'
+gem 'middleman-sprockets', '~> 4.0'
 
 # CSS cleanup
 gem 'middleman-autoprefixer'
 
 # Twitter Bootstrap
-gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'bootstrap', '~> 4.0.0.alpha6'
 
 # XML manipulation
 gem 'nokogiri'

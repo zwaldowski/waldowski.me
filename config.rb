@@ -1,5 +1,4 @@
 require "bootstrap"
-require "rails-assets-tether-tooltip"
 require "nokogiri"
 
 # Methods defined in the helpers block are available in templates
@@ -41,6 +40,8 @@ end
 set :css_dir, 'styles'
 set :js_dir, 'scripts'
 set :images_dir, 'images'
+
+activate :sprockets
 
 page '/*.xml', layout: false
 page '/*.json', layout: false

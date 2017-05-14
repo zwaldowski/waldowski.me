@@ -10,16 +10,12 @@
   pointer-events: none;
 
   .tooltip-content {
-    padding: 0.5rem 1rem;
-  }
-
-  .tooltip-content {
     box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.3);
     text-shadow: 0 -0.1rem 0 0 #000;
-    border-radius: 0.8rem;
-    padding: 0.8rem 1rem;
-    line-height: 1.1rem;
-    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.625rem;
+    line-height: 0.7rem;
+    font-size: 0.7rem;
   }
 
   &.tooltip-open-transitionend {
