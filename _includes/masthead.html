@@ -1,6 +1,6 @@
-<header class="site-header{% if page.hero or layout.hero %} hero{% endif %}" role="banner">
+<header class="site-header{% if page.hero %} hero{% endif %}" role="banner">
   <div class="wrapper">
-    <h1 class="site-title">{% unless layout.hero %}<a href="{{ "/" | relative_url }}">{% endunless %}{{ site.title | escape }}{% unless layout.hero %}</a>{% endunless %}</h1>
+    <h1 class="site-title">{% unless page.hero %}<a href="{{ "/" | relative_url }}">{% endunless %}{{ site.title | escape }}{% unless page.hero %}</a>{% endunless %}</h1>
     {% unless site.description == false %}
     <h2 class="site-description">{{ site.description | escape }}</h2>
     {% endunless %}
@@ -12,7 +12,7 @@
     </nav>
   </div>
   {% endunless %}
-  {% unless (page.hero or layout.hero) and site.posts %}<div class="scroll-down">
+  {% if page.hero and site.posts != empty %}<div class="scroll-down">
     <a href="#page-content" title="Scroll to content">{% include icon.html name='chevron-down' %}</a>
-  </div>{% endunless %}
+  </div>{% endif %}
 </header>
