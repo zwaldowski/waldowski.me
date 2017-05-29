@@ -1,0 +1,8 @@
+<article class="excerpt">
+  <header class="post-header">
+    <h2 class="post-title"><a href="{{ include.post.url | relative_url }}">{{ include.post.title | escape }}</a></h2>
+    {% include post-meta.html post=include.post %}
+  </header>
+  <p itemprop="description">{{ include.post.excerpt }}</p>
+  <p><a href="{{ include.post.url | relative_url }}" class="read-more">Read the rest {% include icon.html name='chevron-circle-right' %}</a></p>
+</article>

@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include head.html %}
+  <body>
+    {% include masthead.html %}
+    <main id="page-content" role="main">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+    {% unless site.posts == empty and page.id == nil %}{% include footer.html %}{% endunless %}</body>
+</html>

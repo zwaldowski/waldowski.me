@@ -1,0 +1,36 @@
+// Colors
+
+$color-primary: #55595c;
+$color-secondary: #ddd;
+$color-tertiary: #a09da6;
+
+$body-background: #fff;
+$body-background-alternate: #d1e2e2;
+$body-foreground: $color-primary;
+
+$inverted-background: #222;
+$inverted-foreground: #fff;
+
+// Links
+
+$link-color:            inherit;
+$link-decoration:       underline;
+$link-hover-color:      #607890;
+$link-hover-decoration: none;
+
+// Typography
+
+$root-font-size:   16px;
+$root-line-height: 1.25;
+$root-font-family: "Fira Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+$code-font-family: "SF Mono", "Fira Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace;
+
+// Responsive
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);

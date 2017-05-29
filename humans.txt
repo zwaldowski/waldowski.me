@@ -1,0 +1,19 @@
+# Main
+- Content owner: Zachary Waldowski
+- Mail: zach@waldowski.me
+- Twitter: @zwaldowski
+- Location: Atlanta, GA, USA
+
+# Site
+- Doctype: HTML5
+- Other standards: SCSS
+- Served by: GitHub Pages via Amazon CloudFront
+- Software: Sublime Text
+
+# Special Thanks
+- Original Theme: Stefan Laketa
+  Site: http://laketa.com
+- Typography: Fira Sans (Carrois)
+  Site: http://www.carrois.com/en/fira-4-1/
+- Artwork: Danny Fischer (@dnyfsr)
+  Site: https://danny.fm/
