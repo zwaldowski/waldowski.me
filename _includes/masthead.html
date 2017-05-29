@@ -12,7 +12,7 @@
     </nav>
   </div>
   {% endunless %}
-  {% unless page.hero == false or site.posts == empty %}<div class="scroll-down">
+  {% if page.hero and site.posts != empty %}<div class="scroll-down">
     <a href="#page-content" title="Scroll to content">{% include icon.html name='chevron-down' %}</a>
-  </div>{% endunless %}
+  </div>{% endif %}
 </header>
