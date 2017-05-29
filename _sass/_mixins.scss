@@ -19,11 +19,13 @@
     svg {
       @if $size {
         width: $size;
+        height: $size;
       }
 
       @if $medium-size {
         @include media-breakpoint-up(md) {
           width: $medium-size;
+          height: $medium-size;
         }
       }
 

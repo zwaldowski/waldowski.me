@@ -16,10 +16,11 @@ body {
 
 .icon {
     svg {
-        display: inline-block;
         fill: currentColor;
-        height: auto;
+
         vertical-align: text-top;
+
+        overflow: hidden;
     }
 }
 
