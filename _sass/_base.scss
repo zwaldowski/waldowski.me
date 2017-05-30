@@ -1,8 +1,4 @@
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 html {
   font-family: $root-font-family;
@@ -13,7 +9,6 @@ body {
   color: $body-foreground;
   background-color: $body-background;
   line-height: $root-line-height;
-  text-rendering: optimizelegibility;
   margin: 0;
 }
 

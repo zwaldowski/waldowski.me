@@ -1,4 +1,7 @@
 /* Apple's Civic, circa May 2017 */
+
+$__civic-font-family: "SF Mono", "Fira Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace;
+
 $__civic-color-white: #e0e1e6;
 $__civic-color-green-1: #44bb3d;
 $__civic-color-green-2: #22a054;
@@ -30,7 +33,7 @@ $__civic-color-black: #1f1f28;
 @mixin __civic-name-other { color: $__civic-color-cyan-3 }
 @mixin __civic-preprocessor-other { color: $__civic-color-orange-2 }
 
-code { font-family: $code-font-family; }
+code { font-family: $__civic-font-family; }
 .highlight { background-color: $__civic-color-black; color: $__civic-color-white; }
 
 .highlight .c { @include __civic-comment }            /* Comment */
