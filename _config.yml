@@ -12,6 +12,8 @@ defaults:
       path: "assets/images"
     values:
       image: true
+sass:
+    style: compressed
 exclude:
   - Gemfile
   - Gemfile.lock
