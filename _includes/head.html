@@ -9,5 +9,6 @@
   {% endfor %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <meta name="theme-color" content="{{ site.theme_color }}">
   {% include async-webfont.html families="Fira+Sans:400,700italic,700,400italic" %}
 </head>

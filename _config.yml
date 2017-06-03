@@ -5,6 +5,7 @@ email: zach@waldowski.me
 description: >
   App developer. I do the best imitation of myself.
 url: "https://waldowski.me"
+theme_color: "#607890"
 
 # Build settings
 defaults:

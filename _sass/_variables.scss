@@ -15,7 +15,7 @@ $inverted-foreground: #fff;
 
 $link-color:            inherit;
 $link-decoration:       underline;
-$link-hover-color:      #607890;
+$link-hover-color:      #607890 !default;
 $link-hover-decoration: none;
 
 // Typography
