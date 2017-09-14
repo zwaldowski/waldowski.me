@@ -17,6 +17,8 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background: $inverted-background;
+    color: $inverted-foreground;
 }
 
 .icon {
@@ -38,7 +40,6 @@ body {
     color: $color-secondary;
     text-align: center;
 
-    background-color: $inverted-background;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -167,12 +168,17 @@ body {
 
 #page-content {
     flex: 1;
+    color: $body-foreground;
+    background: $body-background;
 
-    margin: 0 10%;
-    max-width: 44rem;
+    padding: 0 10%;
 
     @include media-breakpoint-up(md) {
-        margin: 0 20%;
+        padding: 0 20%;
+    }
+
+    .wrapper {
+        max-width: 44rem;
     }
 }
 
@@ -303,8 +309,6 @@ table {
 }
 
 .site-footer {
-    background: $color-tertiary;
-    color: $inverted-foreground;
     font-weight: 300;
     padding: 2rem 0;
     text-align: center;
