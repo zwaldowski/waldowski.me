@@ -5,10 +5,10 @@
     <h2 class="site-description">{{ site.description | escape }}</h2>
     {% endunless %}
   </div>
-  {% unless site.email == false and site.data.social == empty %}
+  {% unless site.email == false and site.data.contact == empty %}
   <div class="wrapper">
-    <nav class="social-links">
-        {% if site.email %}<a href="mailto:{{ site.email }}" title="Email" class="icon">{% include icon.html name='envelope-o' %}</a>{% endif %}{% for link in site.data.social %}<a href="{{ link.url }}" title="{{ link.name }}" class="icon">{% include icon.html name=link.icon width=16 %}</a>{% endfor %}
+    <nav class="contact-links">
+        {% if site.email %}<a href="mailto:{{ site.email }}" title="Email" class="icon">{% include icon.html name='envelope-o' %}</a>{% endif %}{% for link in site.data.contact %}<a href="{{ link.url }}" title="{{ link.name }}" class="icon">{% include icon.html name=link.icon width=16 %}</a>{% endfor %}
     </nav>
   </div>
   {% endunless %}
