@@ -8,7 +8,7 @@
   {% unless site.email == false and site.data.contact == empty %}
   <div class="wrapper">
     <nav class="contact-links">
-        {% if site.email %}<a href="mailto:{{ site.email }}" title="Email" class="icon">{% include icon.html name='envelope-o' %}</a>{% endif %}{% for link in site.data.contact %}<a href="{{ link.url }}" title="{{ link.name }}" class="icon">{% include icon.html name=link.icon width=16 %}</a>{% endfor %}
+        {% if site.email %}<a href="mailto:{{ site.email }}" title="Email" class="icon">{% include icon.html name='mail' %}</a>{% endif %}{% for link in site.data.contact %}<a href="{{ link.url }}" title="{{ link.name }}" class="icon">{% include icon.html name=link.icon width=16 %}</a>{% endfor %}
     </nav>
   </div>
   {% endunless %}
