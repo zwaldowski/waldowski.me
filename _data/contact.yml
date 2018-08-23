@@ -1,3 +1,6 @@
+- name: Mastodon
+  icon: mastodon
+  url: https://mastodon.social/@zw
 - name: Twitter
   icon: twitter
   url: https://twitter.com/zwaldowski
