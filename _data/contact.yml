@@ -4,6 +4,7 @@
 - name: Mastodon
   icon: mastodon
   url: https://mastodon.social/@zw
+  rel: me
 - name: Twitter
   icon: twitter
   url: https://twitter.com/zwaldowski
