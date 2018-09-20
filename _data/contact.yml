@@ -1,12 +1,12 @@
+- name: GitHub
+  icon: github-alt
+  url: https://github.com/zwaldowski
 - name: Mastodon
   icon: mastodon
   url: https://mastodon.social/@zw
 - name: Twitter
   icon: twitter
   url: https://twitter.com/zwaldowski
-- name: GitHub
-  icon: github-alt
-  url: https://github.com/zwaldowski
 - name: Facebook
   icon: facebook-official
   url: https://www.facebook.com/zwaldowski
