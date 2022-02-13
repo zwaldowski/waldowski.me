@@ -79,8 +79,6 @@ h1 {
   margin-top: 1rem;
   margin-bottom: 1.75rem;
   font-size: 5rem;
-  display: inline-flex;
-  color: #2800ff;
 }
 h2 {
   font-size: 4rem;
@@ -160,17 +158,15 @@ a:hover {
   border: 2px solid var(--heading-color);
 }
 
-.home main h1 {
-  font-size: 48px;
+.home .content h1 {
+  font-size: 3rem;
   margin-bottom: 50px;
 }
 
-.home main h1:after {
+.home .content h1:after {
   content: ".";
   color: var(--accent-color);
 }
-
-
 
 /* Media */
 @media (min-width: 375px) {
@@ -183,5 +179,14 @@ a:hover {
 @media (min-width: 767px) {
   .wrapper {
     padding: 50px;
+  }
+  
+  .home .content h1 {
+    width: 85%;
+    font-size: 5.5rem;
+  }
+  
+  ul {
+    padding: 0 0 0 40px;
   }
 }
