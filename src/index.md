@@ -14,10 +14,6 @@ Occasionally, I break software [in public](https://github.com/zwaldowski) rather
 
 I've discovered something of an allergy to social media, so this page is what you get in lieu of any tweets, toots, takes, statuses, or pivots to short-form video.
 
-### Posts
-
-{% include 'components/posts.home.njk' %}
-
 ### Find Me Lurking On
 
 {% include 'components/links.home.njk' %}

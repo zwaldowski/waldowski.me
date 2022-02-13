@@ -1,12 +1,3 @@
-/******************************************************************************
-START Glitch hello-app default styles
-
-The styles in this section do some minimal CSS resets, set default fonts and 
-colors, and handle the layout for our footer and "Remix on Glitch" button. If
-you're new to CSS they may seem a little complicated, but you can scroll down
-to this section's matching END comment to see page-specific styles.
-******************************************************************************/
-/* Our default values set as CSS variables */
 :root {
   --font-family: system-ui, "Helvetica Neue", Helvetica, sans-serif;
   --under-page-background: #011432;
@@ -38,14 +29,10 @@ to this section's matching END comment to see page-specific styles.
   }
 }
 
-/* Basic page style resets */
+/* Reset */
 * {
   box-sizing: border-box;
 }
-
-/******************************************************************************
-END Glitch hello-app default styles
-******************************************************************************/
 
 /* Page structure */
 body {
@@ -64,9 +51,8 @@ body {
 }
 
 .wrapper {
-  min-height: 1165px;
   margin: var(--page-margin);
-  max-width: 802px;
+  max-width: 1000px;
   box-shadow: 12px 18px 24px rgba(0, 0, 0, 0.6);
   padding: 30px 22px;
   background: var(--page-background);
@@ -108,8 +94,7 @@ h4 {
 h5 {
   font-size: 1.25rem;
 }
-small,
-.text_small {
+small {
   font-size: 0.8rem;
 }
 ul > li,
@@ -122,9 +107,6 @@ ul {
   padding: 0 0 0 18px;
   margin: 0;
 }
-ul.no-bullet {
-  list-style-type: none;
-}
 
 /* Link styles */
 a:link,
@@ -136,25 +118,7 @@ a:visited {
 }
 a:hover {
   background: var(--accent-color);
-}
-
-/* Layout: Home */
-.home {
-  justify-content: left;
-}
-
-/* Post */
-.post {
-  place-items: normal;
-}
-.postTitle {
-  font-size: 4rem;
-  color: #000000;
-  line-height: 1.1;
-  margin-bottom: 2rem;
-}
-.controls {
-  margin: 3rem 0 2rem;
+  color: black;
 }
 
 /* Media */
