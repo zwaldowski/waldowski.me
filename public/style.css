@@ -8,12 +8,44 @@ to this section's matching END comment to see page-specific styles.
 ******************************************************************************/
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #D7F5EF;
+  /* deprecated */
+  --color-bg: #d7f5ef;
   --color-text-main: #000000;
-  --color-primary: #AFECE0;
+  --color-primary: #afece0;
   --wrapper-height: 85vh;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
+
+  --font-family: system-ui, "Helvetica Neue", Helvetica, sans-serif;
+  --font-family-header: var(--font-family);
+
+  --under-page-background: #011432;
+  --under-page-color: #ffffff;
+
+  --page-background: #ffffff;
+  --page-color: #4e5157;
+  --heading-color: #1c1b1d;
+  --accent-color: #607890;
+
+  --page-margin-h: 10px;
+  --page-margin-v: 32px;
+  --page-margin: var(--page-margin-v) var(--page-margin-h);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-background: #1c1c1e;
+    --page-color: #aaa6a0;
+    --heading-color: #ffffff;
+    --accent-color: #7e9ebd;
+  }
+}
+
+@supports (margin: max(0rem)) {
+  :root {
+    --main-margin: max(var(--main-margin-v), env(safe-area-inset-top))
+      max(var(--main-margin-h), env(safe-area-inset-right))
+      max(var(--main-margin-v), env(safe-area-inset-bottom))
+      max(var(--main-margin-h), env(safe-area-inset-left));
+  }
 }
 
 /* Basic page style resets */
@@ -41,30 +73,33 @@ END Glitch hello-app default styles
 /* Page structure */
 body {
   font-family: var(--font-family);
-  background-color: var(--color-bg);
+  background: var(--under-page-background)
+    url(https://cdn.glitch.global/131a8a69-9134-4914-b943-50e9fb9a2015/bg.jpg?v=1644714780719)
+    no-repeat fixed 50% 50% / cover;
+  color: var(--under-page-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 90vh;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
 }
+
 .wrapper {
-  min-height: var(--wrapper-height);
-  place-items: center;
+  min-height: 1165px;
   margin: 3rem 2rem;
-  border: 6px solid red;
   max-width: 900px;
+  box-shadow: 12px 18px 24px rgba(0, 0, 0, 0.6);
+  padding: 30px 22px;
+  background: var(--page-background);
+  color: var(--page-color);
 }
-/* .content {
-  display: flex;
-  flex-direction: column;
-  max-width: 900px;
-  margin: 0 auto;
-} */
 
 /* Typography */
 p {
   margin: 0 0 1rem 0;
-  line-height: 1.5 !important;
+  line-height: 1.5;
   font-size: 1rem;
 }
 h1,
@@ -72,18 +107,18 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 2rem 0 .8rem;
+  margin: 2rem 0 0.8rem;
   font-family: var(--font-family-header);
   font-weight: 600;
   line-height: 1.1;
-  color: var(--color-text-main);
+  color: var(--heading-color);
 }
 h1 {
   margin-top: 1rem;
   margin-bottom: 1.75rem;
   font-size: 5rem;
   display: inline-flex;
-  color: #2800FF;
+  color: #2800ff;
 }
 h2 {
   font-size: 4rem;
