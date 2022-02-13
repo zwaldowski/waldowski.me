@@ -3,20 +3,21 @@ layout: layouts/home.njk
 ogtype: website
 ---
 
-<div class="illo-container">
-  <img src="https://cdn.glitch.com/cad20829-cd7f-405a-95e8-5e17b206a304%2Fillustration.svg?v=1618198438357" class="illustration" style="align: right" alt="Eleventy!">
-</div>
+# I do the best imitation of myself
 
-# Hello Eleventy!
+(It's from a [song](https://itunes.apple.com/us/album/best-imitation-of-myself/771779576?i=771779689).)
 
-Welcome to the Glitch [Eleventy](https://www.11ty.dev/) starter, where you can create a blog or landing page that generates a static site.
+I'm a passionate, perfectionist, angry app developer at [Big Nerd Ranch](https://www.bignerdranch.com) living in Atlanta, GA, USA with my awesome partner and our 6 shiba inu plushies.
 
-Each of the initial blog posts has special tips to help you get the most out of your new site–work through them all, learning how to add posts and customize how your site builds along the way. Once you've mastered the basics, you can delete all these posts and continue writing your own!
+I make native iOS apps for really obscure clients that [nobody knows](https://www.apple.com) about.
+Occasionally, I break software [in public](https://github.com/zwaldowski) rather than in private.
 
-## Posts
+I've discovered something of an allergy to social media, so this page is what you got in lieu of any tweets, toots, takes, statuses, or pivots to short-form video.
+
+### Posts
 
 {% include 'components/posts.home.njk' %}
 
-## Find Me Lurking On
+### Find Me Lurking On
 
 {% include 'components/links.home.njk' %}

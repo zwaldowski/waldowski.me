@@ -6,10 +6,13 @@
     <link rel="stylesheet" type="text/css" href="{{ "/public/style.css" | url }}" />
     <link rel="icon" type="image/jpeg" href="{{ metadata.email | gravatar("32") }}" />
     {% seo "" %}
+    <meta name="twitter:dnt" content="on">
+    {% for link in links | selectattr("rel") -%}
+    <link rel="me" href="{{ link.href }}">
+    {% endfor -%}
   </head>
   <body>
   <main>
-    {{ page | log }}
     {# Page or post content will appear here #}
   
     {{ content | safe }}
@@ -19,8 +22,6 @@
           <a href="/">Home</a>
           <span class="divider">|</span>
           <a href="/posts">Posts</a>
-          <span class="divider">|</span>
-          <a href="/about">About</a>
         </div>
       </footer>
     
