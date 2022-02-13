@@ -7,14 +7,13 @@
     "build": "NODE_ENV=production eleventy"
   },
   "dependencies": {
-    "eleventy-plugin-seo": "0.5.2",
-    "luxon": "2.3.0"
+    "eleventy-plugin-seo": "^0.5.2"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0"
   },
   "engines": {
-    "node": "12"
+    "node": ">=12"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/glitch-hello-eleventy"
