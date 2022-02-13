@@ -1,0 +1,22 @@
+[
+  {
+    "title": "GitHub",
+    "href": "https://github.com/zwaldowski",
+    "rel": "me"
+  },
+  {
+    "title": "Twitter",
+    "href": "https://twitter.com/zwaldowski",
+    "rel": "me"
+  },
+  {
+    "title": "Mastodon",
+    "href": "https://mastodon.social/@zw",
+    "rel": "me"
+  },
+  {
+    "title": "Instagram",
+    "href": "https://instagram.com/zwaldowski",
+    "rel": "me"
+  }
+]

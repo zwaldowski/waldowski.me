@@ -1,0 +1,6 @@
+<ul class="links">
+  <li><a href="mailto:{{ metadata.email | urlencode }}">Email</a></li>
+  {%- for link in links -%}
+    <li><a href="{{ link.href }}">{{ link.title }}</a></li>
+  {%- endfor -%}
+</ul>
