@@ -1,11 +1,16 @@
 ---
 layout: layouts/base.njk
-templateClass: tmpl-home
 ---
 
-{# The About page uses this template and you can customize / use it for any new pages you add #}
-
-<div class="wrapper{{  }}">
+<header class="h-card">
+  <p>From the desk of…</p>
+  <hgroup>
+    <img class="u-photo" width="50" src="{{ metadata.email | gravatar }}" />
+    <h1><a class="p-name u-url" href="{{ "/" | url }}">{{ metadata.author }}</a></h1>
+    <h2 class="p-job-title">{{ metadata.jobTitle }}</h2>
+  </hgroup>
+</header>
+<main class="page {{ page.fileSlug | default("home", true) }}">
   <div class="content">
     {{ content | safe }}
   </div>

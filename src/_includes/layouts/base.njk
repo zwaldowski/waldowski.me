@@ -12,20 +12,8 @@
     {% endfor -%}
   </head>
   <body>
-  <main>
-    {# Page or post content will appear here #}
-  
-    {{ content | safe }}
-
-      <footer class="footer">
-        <div class="links">
-          <a href="/">Home</a>
-          <span class="divider">|</span>
-          <a href="/posts">Posts</a>
-        </div>
-      </footer>
-    
-  </main>
-   
+    <div class="wrapper">
+      {{ content | safe }}
+    </div>
   </body>
 </html>
