@@ -121,8 +121,58 @@ a:hover {
   color: black;
 }
 
-/* Media */
+/* Layout: Page */
+.h-card p {
+  font-weight: bold;
+  text-transform: uppercase;
+/*   margin: 0; */
+}
 
+.h-card hgroup {
+  margin-top: 1.875rem;
+}
+
+.h-card hgroup > * {
+  display: inline;
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+
+.h-card h1 {
+  margin-left: 5px;
+}
+
+.h-card h1:after {
+  content: ",";
+}
+
+.h-card h2 {
+  font-weight: normal;
+  color: inherit;
+}
+
+.h-card a:link {
+  color: inherit;
+}
+
+.h-card img {
+  border-radius: 50%;
+  border: 2px solid var(--heading-color);
+}
+
+.home main h1 {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.home main h1:after {
+  content: ".";
+  color: var(--accent-color);
+}
+
+
+
+/* Media */
 @media (min-width: 375px) {
   :root {
     --page-margin-h: 10px;
