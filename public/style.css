@@ -154,7 +154,7 @@ a:hover, a:focus {
 .home .content h1:first-of-type {
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .home .content h1:after {
@@ -184,8 +184,13 @@ a:hover, a:focus {
     margin-left: 1.25rem;
   }
   
+  .h-card p {
+    margin-bottom: 32px;
+  }
+  
   .home .content h1:first-of-type {
     width: 85%;
     font-size: 5.5rem;
+    margin-bottom: 3.125rem;
   }
 }
