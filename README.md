@@ -4,9 +4,9 @@ One-page landing site iterating on my previous attempts at a [microblog](https:/
 
 ## Try it yourself
 
-Remix it and:
+Remix me on [Glitch](https://glitch.com/~clover-small-blouse):
 
-1. Update `_data/metadata.json` and `_data/links.json` for your own details.
+1. Update `src/_data/metadata.json` and `src/_data/links.json` for your own details.
 1. Change `index.md` to tell say a little about yourself.
-1. Add a new background image and update it in the CSS.
+1. Add a new background image asset and update it in the CSS.
 1. Change the colors in the CSS.
