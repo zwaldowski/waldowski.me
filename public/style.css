@@ -7,7 +7,7 @@
   --heading-color: #1c1b1d;
   --accent-color: #607890;
   --page-margin-h: 2px;
-  --page-margin-v: 24px;
+  --page-margin-v: 10px;
   --page-margin: var(--page-margin-v) var(--page-margin-h);
 }
 
@@ -87,15 +87,15 @@ h3 {
 small {
   font-size: 0.8rem;
 }
+ul, ol {
+  padding: 0.625rem 0 1.25rem 1.25rem;
+  margin: 0;
+}
 ul > li,
 ol > li {
   margin-bottom: 0.625rem;
-  line-height: 1.5;
+  line-height: 1.1;
   font-size: 1rem;
-}
-ul, ol {
-  padding: 0.625rem 0 1.25rem;
-  margin: 0;
 }
 
 /* Link styles */
@@ -154,7 +154,7 @@ a:hover, a:focus {
 .home .content h1:first-of-type {
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 3.125rem;
+  margin-bottom: 1.875rem;
 }
 
 .home .content h1:after {
@@ -185,7 +185,7 @@ a:hover, a:focus {
   }
   
   .h-card p {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
   }
   
   .home .content h1:first-of-type {
