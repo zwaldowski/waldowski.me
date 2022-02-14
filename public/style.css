@@ -76,19 +76,13 @@ h5 {
   color: var(--heading-color);
 }
 h1 {
-  font-size: 5rem;
+  font-size: 2.5rem;
 }
 h2 {
-  font-size: 4rem;
+  font-size: 1.75rem;
 }
 h3 {
-  font-size: 2rem;
-}
-h4 {
-  font-size: 1.5rem;
-}
-h5 {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
 }
 small {
   font-size: 0.8rem;
@@ -99,8 +93,8 @@ ol > li {
   line-height: 1.5;
   font-size: 1rem;
 }
-ul {
-  padding: 0.625rem 0 1.25rem 1.25rem;
+ul, ol {
+  padding: 0.625rem 0 1.25rem;
   margin: 0;
 }
 
@@ -112,6 +106,11 @@ a:visited {
 }
 a:hover, a:focus {
   text-decoration: underline 2px;
+}
+
+/* Content */
+.content {
+    font-size: 1.125rem;
 }
 
 /* Layout: Page */
@@ -176,8 +175,13 @@ a:hover, a:focus {
     padding: 3.125rem;
   }
   
-  ul {
+  ul, ol {
     padding: 0 0 0 2.5rem;
+  }
+  
+  ul > li,
+  ol > li {
+    margin-left: 1.25rem;
   }
   
   .home .content h1:first-of-type {
