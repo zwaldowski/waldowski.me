@@ -191,6 +191,6 @@ a:hover, a:focus {
   .home .content h1:first-of-type {
     width: 85%;
     font-size: 5.5rem;
-    margin-top: 3.125rem 0;
+    margin: 3.125rem 0;
   }
 }

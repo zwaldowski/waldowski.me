@@ -1,7 +1,6 @@
 {
-  "name": "glitch-hello-eleventy",
-  "version": "0.1.0",
-  "description": "A simple blog, set up with Eleventy.",
+  "name": "zwaldowski.github.io",
+  "version": "2022.2.13",
   "scripts": {
     "start": "eleventy --serve",
     "build": "NODE_ENV=production eleventy"
@@ -15,16 +14,8 @@
   "engines": {
     "node": ">=16.12"
   },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/glitch-hello-eleventy"
-  },
   "glitch": {
     "projectType": "generated_static"
   },
-  "license": "MIT",
-  "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ]
+  "license": "MIT"
 }
