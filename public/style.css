@@ -87,8 +87,7 @@ h3 {
 small {
   font-size: 0.8rem;
 }
-ul,
-ol {
+ul, ol {
   padding: 0.625rem 0 1.25rem 1.25rem;
   margin: 0;
 }
@@ -105,15 +104,14 @@ a:visited {
   text-decoration: none;
   color: var(--accent-color);
 }
-a:hover,
-a:focus {
+a:hover, a:focus {
   text-decoration: underline;
   text-decoration-thickness: 0.125em;
 }
 
 /* Content */
 .content {
-  font-size: 1.125rem;
+    font-size: 1.125rem;
 }
 
 /* Layout: Page */
@@ -177,24 +175,23 @@ a:focus {
   .wrapper {
     padding: 50px;
   }
-
-  ul,
-  ol {
+  
+  ul, ol {
     padding: 0 0 0 2.5rem;
   }
-
+  
   ul > li,
   ol > li {
     margin-left: 1.25rem;
   }
-
+  
   .h-card p {
     margin-bottom: 2rem;
   }
-
+  
   .home .content h1:first-of-type {
     width: 85%;
     font-size: 5.5rem;
-    margin-bottom: 3.125rem;
+    margin: 3.125rem 0;
   }
 }
