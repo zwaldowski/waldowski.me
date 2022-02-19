@@ -16,24 +16,6 @@
   font-family: system-ui, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --page-background: #1c1c1e;
-    --page-color: #aaa6a0;
-    --heading-color: #ffffff;
-    --accent-color: #7e9ebd;
-  }
-}
-
-@supports (margin: max(0rem)) {
-  :root {
-    --page-margin: max(var(--page-margin-v), env(safe-area-inset-top))
-      max(var(--page-margin-h), env(safe-area-inset-right))
-      max(var(--page-margin-v), env(safe-area-inset-bottom))
-      max(var(--page-margin-h), env(safe-area-inset-left));
-  }
-}
-
 /* Reset */
 * {
   box-sizing: border-box;
@@ -54,7 +36,11 @@ body {
 .wrapper {
   max-width: 1000px;
   padding: 30px 22px;
-  margin: var(--page-margin);
+  margin: var(--page-margin-v) var(--page-margin-h);
+  margin: max(var(--page-margin-v), env(safe-area-inset-top))
+    max(var(--page-margin-h), env(safe-area-inset-right))
+    max(var(--page-margin-v), env(safe-area-inset-bottom))
+    max(var(--page-margin-h), env(safe-area-inset-left));
   background: var(--page-background);
   box-shadow: 12px 18px 24px rgba(0, 0, 0, 0.6);
   color: var(--page-color);
@@ -167,6 +153,15 @@ a:focus {
 }
 
 /* Media */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-background: #1c1c1e;
+    --page-color: #aaa6a0;
+    --heading-color: #ffffff;
+    --accent-color: #7e9ebd;
+  }
+}
+
 @media (min-width: 375px) {
   :root {
     --page-margin-v: 36px;
