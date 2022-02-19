@@ -1,14 +1,14 @@
 :root {
-  --font-family: system-ui, "Helvetica Neue", Helvetica, sans-serif;
+  --page-margin-v: 18px;
+  --page-margin-h: 10px;
+  --page-margin: var(--page-margin-v) var(--page-margin-h);
   --under-page-background: #011432;
   --under-page-color: #ffffff;
   --page-background: #ffffff;
   --page-color: #4e5157;
   --heading-color: #1c1b1d;
   --accent-color: #607890;
-  --page-margin-h: 2px;
-  --page-margin-v: 10px;
-  --page-margin: var(--page-margin-v) var(--page-margin-h);
+  --font-family: system-ui, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,34 +36,35 @@
 
 /* Page structure */
 body {
-  font-family: var(--font-family);
+  display: flex;
+  min-height: 90vh;
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  min-height: 100svh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
   background: var(--under-page-background)
     url(https://cdn.glitch.global/131a8a69-9134-4914-b943-50e9fb9a2015/bg.jpg?v=1644714780719)
     no-repeat fixed 50% 50% / cover;
   color: var(--under-page-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh;
-  min-height: fill-available;
-  min-height: -webkit-fill-available;
-  min-height: -moz-available;
+  font-family: var(--font-family);
 }
 
 .wrapper {
-  margin: var(--page-margin);
   max-width: 1000px;
-  box-shadow: 12px 18px 24px rgba(0, 0, 0, 0.6);
   padding: 30px 22px;
+  margin: var(--page-margin);
   background: var(--page-background);
+  box-shadow: 12px 18px 24px rgba(0, 0, 0, 0.6);
   color: var(--page-color);
 }
 
 /* Typography */
 p {
   margin: 0 0 1.25rem 0;
-  line-height: 1.5;
   font-size: 1.125rem;
+  line-height: 1.5;
 }
 h1,
 h2,
@@ -71,9 +72,9 @@ h3,
 h4,
 h5 {
   margin: 1.875rem 0 1.25rem 0;
+  color: var(--heading-color);
   font-weight: 600;
   line-height: 1.1;
-  color: var(--heading-color);
 }
 h1 {
   font-size: 2.5rem;
@@ -87,31 +88,33 @@ h3 {
 small {
   font-size: 0.8rem;
 }
-ul, ol {
+ul,
+ol {
   padding: 0.625rem 0 1.25rem 1.25rem;
   margin: 0;
 }
 ul > li,
 ol > li {
   margin-bottom: 0.625rem;
-  line-height: 1.1;
   font-size: 1rem;
+  line-height: 1.1;
 }
 
 /* Link styles */
 a:link,
 a:visited {
-  text-decoration: none;
   color: var(--accent-color);
+  text-decoration: none;
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: underline;
   text-decoration-thickness: 0.125em;
 }
 
 /* Content */
 .content {
-    font-size: 1.125rem;
+  font-size: 1.125rem;
 }
 
 /* Layout: Page */
@@ -148,50 +151,55 @@ a:hover, a:focus {
 }
 
 .h-card img {
-  border-radius: 50%;
   border: 2px solid var(--heading-color);
+  border-radius: 50%;
 }
 
 .home .content h1:first-of-type {
+  margin-bottom: 1.875rem;
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 1.875rem;
 }
 
 .home .content h1:after {
-  content: ".";
   color: var(--accent-color);
+  content: ".";
 }
 
 /* Media */
 @media (min-width: 375px) {
   :root {
-    --page-margin-h: 10px;
-    --page-margin-v: 28px;
+    --page-margin-v: 36px;
+    --page-margin-h: 18px;
   }
 }
 
 @media (min-width: 767px) {
+  :root {
+    --page-margin-h: 36px;
+  }
+
   .wrapper {
     padding: 50px;
   }
-  
-  ul, ol {
+
+  ul,
+  ol {
     padding: 0 0 0 2.5rem;
   }
-  
+
   ul > li,
   ol > li {
     margin-left: 1.25rem;
   }
-  
+
   .h-card p {
     margin-bottom: 2rem;
   }
-  
+
   .home .content h1:first-of-type {
     width: 85%;
-    font-size: 5.5rem;
     margin: 3.125rem 0;
+    font-size: 5.5rem;
   }
 }
