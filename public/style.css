@@ -8,7 +8,12 @@
   --page-color: #4e5157;
   --heading-color: #1c1b1d;
   --accent-color: #607890;
-  --font-family: system-ui, "Helvetica Neue", Helvetica, sans-serif;
+
+  background: var(--under-page-background)
+    url(https://cdn.glitch.global/131a8a69-9134-4914-b943-50e9fb9a2015/bg.jpg?v=1644714780719)
+    no-repeat fixed 50% 50% / cover;
+  color: var(--under-page-color);
+  font-family: system-ui, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,11 +49,6 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
-  background: var(--under-page-background)
-    url(https://cdn.glitch.global/131a8a69-9134-4914-b943-50e9fb9a2015/bg.jpg?v=1644714780719)
-    no-repeat fixed 50% 50% / cover;
-  color: var(--under-page-color);
-  font-family: var(--font-family);
 }
 
 .wrapper {
