@@ -31,6 +31,9 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
+  background: var(--under-page-background)
+    url(https://cdn.glitch.global/39182fb2-8c4c-48c0-b963-1d87768a8cf7/bg.jpg?v=1645381044868)
+    no-repeat fixed 50% 50% / cover;
 }
 
 .wrapper {
@@ -43,6 +46,7 @@ body {
     max(var(--page-margin-h), env(safe-area-inset-left));
   background: var(--page-background);
   box-shadow: 12px 18px 24px rgba(0, 0, 0, 0.6);
+  /*   box-shadow: 12px 18px 24px rgba(0, 0, 0, 0.6); */
   color: var(--page-color);
 }
 
