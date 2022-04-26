@@ -3,8 +3,9 @@ permalink: /.well-known/webfinger
 eleventyExcludeFromCollections: true
 ---
 {
-  "subject": "acct:{{ metadata.email }}",
+  "subject": "acct:{{ metadata.mastodon[0] }}@{{ metadata.mastodon[1] }}",
   "aliases": [
+    "acct:{{ metadata.email }}",
     "https://{{ metadata.mastodon[1] }}/@{{ metadata.mastodon[0] }}",
     "https://{{ metadata.mastodon[1] }}/users/{{ metadata.mastodon[0] }}"
   ],
