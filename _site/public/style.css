@@ -97,7 +97,6 @@ a:hover,
 a:focus {
   text-decoration: underline;
   text-decoration-thickness: 0.125em;
-  text-decoration-skip-ink: none;
 }
 
 /* Content */
@@ -155,28 +154,19 @@ a:focus {
   content: ".";
 }
 
-.links {
-  font-size: 2em;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  line-height: 1em;
+nav.links {
+  font-size: 1.333em;
 }
 
-.links a {
-  padding: 8px 10px 8px 0;
+nav.links a {
+  padding: 10px 8px;
 }
 
-.links a svg {
+nav.links a svg {
   width: 1em;
   height: 1em;
   fill: currentcolor;
-  vertical-align: bottom;
-}
-
-.links a:hover svg,
-.links a:focus svg {
-  color: var(--heading-color);
+  overflow: visible;
 }
 
 /* Media */
@@ -224,10 +214,4 @@ a:focus {
     margin: 3.125rem 0;
     font-size: 5.5rem;
   }
-
-  .links {
-    margin: 2rem 0 0;
-    font-size: 3em;
-  }
-
 }

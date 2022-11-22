@@ -2,16 +2,8 @@
 layout: layouts/base.njk
 ---
 
-<header class="h-card">
-  <p>From the desk of…</p>
-  <hgroup>
-    <img class="u-photo" width="54" src="{{ metadata.email | gravatar }}" />
-    <h1><a class="p-name u-url" href="{{ "/" | url }}">{{ metadata.author }}</a></h1>
-    <h2 class="p-job-title">{{ metadata.jobTitle }}</h2>
-  </hgroup>
-</header>
-<main class="page {{ page.fileSlug | default("home", true) }}">
+<main class="page">
   <div class="content">
     {{ content | safe }}
   </div>
-</div>
+</main>

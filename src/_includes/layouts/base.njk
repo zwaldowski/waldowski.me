@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, viewport-fit=cover">
     <link rel="stylesheet" type="text/css" href="{{ "/public/style.css" | url }}">
-    <link rel="icon" type="image/jpeg" sizes="16x16" href="{{ metadata.email | gravatar("16") }}">
-    <link rel="icon" type="image/jpeg" sizes="32x32" href="{{ metadata.email | gravatar("32") }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ metadata.email | gravatar("180") }}">
+    <link rel="icon" type="image/jpeg" href="{{ metadata.email | avatar("16") }}" sizes="16x16">
+    <link rel="icon" type="image/jpeg" href="{{ metadata.email | avatar("32") }}" sizes="32x32">
+    <link rel="apple-touch-icon" type="image/jpeg" href="{{ metadata.email | avatar("180") }}" sizes="180x180">
     {% seo "" %}
     <meta name="twitter:dnt" content="on">
-    {% for link in links | selectattr("rel") -%}
-    <link rel="me" href="{{ link.href }}">
-    {% endfor -%}
+    <link rel="me" href="https://github.com/{{ metadata.github }}">
+    <link rel="me" href="https://{{ metadata.mastodon[1] }}/@{{ metadata.mastodon[0] }}">
   </head>
   <body>
     <div class="wrapper">
