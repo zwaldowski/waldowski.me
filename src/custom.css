@@ -98,7 +98,15 @@ body {
   background: linear-gradient(to bottom, black 10%, transparent 100%);
 }
 
-.hero nav ul {
+.fourohfour {
+  background: var(--under-page-background) url(/assets/404.jpg) no-repeat 0% 55% /
+    cover;
+  height: 18rem;
+  margin-bottom: 2rem;
+}
+
+.hero nav ul,
+.fourohfour nav ul {
   font-size: 1.2em;
 }
 
