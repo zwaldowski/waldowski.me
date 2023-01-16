@@ -1,13 +1,14 @@
-const { createHash } = require("crypto")
-const seo = require("eleventy-plugin-seo")
-const htmlmin = require("html-minifier")
-const activitypub = require("eleventy-plugin-activity-pub")
-const meta = require("./src/_data/meta.json")
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
+const { createHash } = require("crypto")
+const activitypub = require("eleventy-plugin-activity-pub")
+const seo = require("eleventy-plugin-seo")
+const minify = require("./config/minify.js")
+const meta = require("./src/_data/meta.json")
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(seo, meta)
   eleventyConfig.addPlugin(activitypub, meta.activitypub)
+  eleventyConfig.addPlugin(seo, meta)
+  eleventyConfig.addPlugin(minify)
   eleventyConfig.addPlugin(syntaxHighlight)
 
   eleventyConfig.addPassthroughCopy({
@@ -45,19 +46,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.amendLibrary("md", (markdown) => {
     markdown.options.typographer = true
   })
-
-  if (process.env.NODE_ENV === "production") {
-    eleventyConfig.addTransform("htmlmin", function (content) {
-      if (this.outputPath.endsWith(".html")) {
-        return htmlmin.minify(content, {
-          collapseWhitespace: true,
-          minifyCSS: true,
-        })
-      }
-
-      return content
-    })
-  }
 
   return {
     markdownTemplateEngine: "njk",
