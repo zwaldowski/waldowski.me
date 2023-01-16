@@ -1,0 +1,72 @@
+---
+layout: base.njk
+---
+
+<style type="text/css">
+  {% set steps = meta.title | length %}
+  @keyframes typing { {% for i in range(1, steps + 1) %}
+    {{ (i * 100.0 / steps) | round }}% {
+      content: "{{ meta.title.slice(0, i) }}";
+    }
+    {% endfor %}
+  }
+
+  .hero .site-title {
+    animation-timing-function: steps({{ steps }});
+  }
+
+  .hero .site-title:before {
+    animation-name: typing;
+    animation-timing-function: steps({{ steps }});
+  }
+</style>
+
+<header class="hero" data-theme="dark">{% include 'nav.njk' %}</header>
+
+<main class="container">
+  <h1>
+    I do the best imitation of myself<a
+      href="https://itunes.apple.com/us/album/best-imitation-of-myself/771779576?i=771779689"
+      title="It’s from a song I like."
+      >.</a
+    >
+  </h1>
+
+  <img
+    class="u-photo"
+    src="{{ meta.email | avatar }}"
+    alt=""
+    width="80"
+    height="80"
+  />
+  {{ content | safe }}
+
+  <article class="h-feed">
+    <header>
+      <hgroup>
+        <h2>
+          <data class="p-name" value="Notes by {{ meta.author }}">Notes</data>
+        </h2>
+        <h3 class="p-summary">
+          Digital leftovers: <strike>no</strike> some apologies.
+        </h3>
+      </hgroup>
+    </header>
+    <ol reversed>
+      {% for post in collections.home %}
+      <li class="h-entry">
+        <a href="{{ post.url }}" class="u-url p-name">{{ post.data.title }}</a>
+        {% if post.data.description -%}
+        <br />
+        <span class="p-summary">{{ post.data.description }}</span>
+        {%- endif %}
+        <data class="dt-published" value="{{ post.date.toISOString() }}" />
+        {%- if post.updated %}<data
+          class="dt-updated"
+          value="{{ post.updated.toISOString() }}"
+        />{% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </article>
+</main>

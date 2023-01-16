@@ -1,0 +1,29 @@
+---
+layout: base.njk
+---
+<header>
+  {% include 'nav.njk' %}
+</header>
+
+<main class="container h-entry">
+  <header>
+    <hgroup>
+      <h1 class="p-name">{{ title }}</h1>
+      <p>
+        <span class="icon-date"
+          >Published <date class="dt-published" datetime="{{ date.toISOString() }}">{{ date | dateMedium }}</date></span
+        >
+        {%- if updated %}
+          <br>
+          <span class="icon-time"
+            >Updated
+            <date class="dt-updated" datetime="{{ updated.toISOString() }}">{{ updated | dateMedium }}</date></span
+          >
+        {% endif %}
+      </p>
+    </hgroup>
+  </header>
+  <div class="e-content">
+    {{ content | safe }}
+  </div>
+</main>

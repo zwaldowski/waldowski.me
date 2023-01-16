@@ -1,0 +1,17 @@
+{
+  "lang": "en",
+  "url": "https://waldowski.me",
+  "title": "Zachary Waldowski",
+  "description": "App developer. I do the best imitation of myself.",
+  "author": "Zachary Waldowski",
+  "email": "zach@waldowski.me",
+  "image": "/assets/share.jpg",
+  "activitypub": {
+    "username": "zach",
+    "domain": "waldowski.me",
+    "alias": {
+      "username": "zw",
+      "domain": "mastodon.social"
+    }
+  }
+}

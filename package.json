@@ -1,0 +1,30 @@
+{
+  "name": "waldowski.me",
+  "version": "2023.1.16",
+  "description": "Personal blog",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zwaldowski/waldowski.me.git"
+  },
+  "license": "MIT",
+  "author": "Zachary Waldowski <zach@waldowski.me>",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "NODE_ENV=production eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0-canary.30",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+    "@picocss/pico": "^1.5.6",
+    "eleventy-plugin-activity-pub": "^0.1.1",
+    "eleventy-plugin-seo": "^0.5.2",
+    "html-minifier": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "glitch": {
+    "projectType": "generated_static",
+    "buildDirectory": "_site"
+  }
+}
