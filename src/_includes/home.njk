@@ -1,7 +1,6 @@
 ---
 layout: base.njk
 ---
-
 <style type="text/css">
   {% set steps = meta.title | length %}
   @keyframes typing { {% for i in range(1, steps + 1) %}
@@ -38,7 +37,7 @@ layout: base.njk
     alt=""
     width="80"
     height="80"
-  />
+  >
   {{ content | safe }}
 
   <article class="h-feed">
@@ -47,25 +46,25 @@ layout: base.njk
         <h2>
           <data class="p-name" value="Notes by {{ meta.author }}">Notes</data>
         </h2>
-        <h3 class="p-summary">
-          Digital leftovers: <strike>no</strike> some apologies.
-        </h3>
+        <h3 class="p-summary">Digital leftovers: <strike>no</strike> some apologies.</h3>
       </hgroup>
     </header>
     <ol reversed>
       {% for post in collections.home %}
-      <li class="h-entry">
-        <a href="{{ post.url }}" class="u-url p-name">{{ post.data.title }}</a>
-        {% if post.data.description -%}
-        <br />
-        <span class="p-summary">{{ post.data.description }}</span>
-        {%- endif %}
-        <data class="dt-published" value="{{ post.date.toISOString() }}" />
-        {%- if post.updated %}<data
-          class="dt-updated"
-          value="{{ post.updated.toISOString() }}"
-        />{% endif %}
-      </li>
+        <li class="h-entry">
+          <a href="{{ post.url }}" class="u-url p-name">{{ post.data.title }}</a>
+          {% if post.data.description -%}
+            <br>
+            <span class="p-summary">{{ post.data.description }}</span>
+          {%- endif %}
+          <data class="dt-published" value="{{ post.date.toISOString() }}" />
+          {%- if post.updated -%}
+            <data
+              class="dt-updated"
+              value="{{ post.updated.toISOString() }}"
+            />
+          {%- endif %}
+        </li>
       {% endfor %}
     </ol>
   </article>
