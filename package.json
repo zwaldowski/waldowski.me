@@ -20,6 +20,7 @@
     "eleventy-plugin-activity-pub": "^0.1.1",
     "eleventy-plugin-seo": "^0.5.2",
     "html-minifier-terser": "^7.1.0",
+    "lightningcss": "^1.18.0",
     "prettier": "^2.8.2"
   },
   "engines": {

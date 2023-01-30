@@ -11,11 +11,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(minify)
   eleventyConfig.addPlugin(syntaxHighlight)
 
-  eleventyConfig.addPassthroughCopy({
-    "node_modules/@picocss/pico/css/pico.min.css": "pico.css",
-  })
   eleventyConfig.addPassthroughCopy("src/assets")
-  eleventyConfig.addPassthroughCopy("src/custom.css")
 
   eleventyConfig.addCollection("home", (collections) =>
     collections
