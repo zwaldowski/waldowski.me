@@ -5,7 +5,16 @@ permalink: /
 ogtype: website
 ---
 
-Hi there! I’m a passionate, perfectionist, angry app developer at [Big Nerd Ranch](https://www.bignerdranch.com) living in Atlanta, GA, USA with my awesome partner and our 6 shiba inu plushies.
+# I do the best imitation of myself[.](https://itunes.apple.com/us/album/best-imitation-of-myself/771779576?i=771779689 "(It’s from a song.)")
+
+<img
+class="u-photo"
+src="{{ meta.email | avatar }}"
+alt="Profile picture"
+width="80"
+height="80">
+
+Howdy! I’m a passionate, perfectionist, angry app developer.
 I make native iOS apps for really obscure clients that [nobody knows](https://www.apple.com) about.
 Occasionally, I break software [in public](https://github.com/zwaldowski) rather than in private.
 Find me lurking on all your favorite websites.

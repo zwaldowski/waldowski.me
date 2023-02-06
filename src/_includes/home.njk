@@ -23,21 +23,6 @@ layout: base.njk
 <header class="hero" data-theme="dark">{% include 'nav.njk' %}</header>
 
 <main class="container">
-  <h1>
-    I do the best imitation of myself<a
-      href="https://itunes.apple.com/us/album/best-imitation-of-myself/771779576?i=771779689"
-      title="It’s from a song I like."
-      >.</a
-    >
-  </h1>
-
-  <img
-    class="u-photo"
-    src="{{ meta.email | avatar }}"
-    alt=""
-    width="80"
-    height="80"
-  >
   {{ content | safe }}
 
   <article class="h-feed">
@@ -46,7 +31,7 @@ layout: base.njk
         <h2>
           <data class="p-name" value="Notes by {{ meta.author }}">Notes</data>
         </h2>
-        <h3 class="p-summary">Digital leftovers: <strike>no</strike> some apologies.</h3>
+        <h3 class="p-summary">Not quite posts. More like digital leftovers.</h3>
       </hgroup>
     </header>
     <ol reversed>
@@ -55,7 +40,7 @@ layout: base.njk
           <a href="{{ post.url }}" class="u-url p-name">{{ post.data.title }}</a>
           {% if post.data.description -%}
             <br>
-            <span class="p-summary">{{ post.data.description }}</span>
+            <span class="p-summary">{{ post.data.description | typography }}</span>
           {%- endif %}
           <data class="dt-published" value="{{ post.date.toISOString() }}" />
           {%- if post.updated -%}

@@ -2,6 +2,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
 const { createHash } = require("crypto")
 const activitypub = require("eleventy-plugin-activity-pub")
 const seo = require("eleventy-plugin-seo")
+const markdownIt = require("markdown-it")
 const minify = require("./config/minify.js")
 const meta = require("./src/_data/meta.json")
 
@@ -39,9 +40,15 @@ module.exports = function (eleventyConfig) {
     })
   })
 
-  eleventyConfig.amendLibrary("md", (markdown) => {
-    markdown.options.typographer = true
+  const markdown = new markdownIt({
+    html: true,
+    typographer: true,
   })
+
+  eleventyConfig.setLibrary("md", markdown)
+  eleventyConfig.addFilter("typography", (input) =>
+    markdown.renderInline(input)
+  )
 
   return {
     markdownTemplateEngine: "njk",

@@ -68,6 +68,10 @@ body {
   flex: 1;
 }
 
+.site-title {
+  font-size: 1.2rem;
+}
+
 .site-title:after {
   content: "_";
   animation: blink 1.5s infinite alternate;
@@ -97,19 +101,14 @@ body {
 }
 
 .hero nav {
-  background: linear-gradient(to bottom, black 10%, transparent 100%);
+  background: linear-gradient(to bottom, black 22%, transparent 100%);
 }
 
 .fourohfour {
-  background: var(--under-page-background) url(/assets/404.jpg) no-repeat 0% 55% /
+  background: var(--under-page-background) url(/assets/404.jpg) no-repeat 0% 50% /
     cover;
   height: 18rem;
   margin-bottom: 2rem;
-}
-
-.hero nav ul,
-.fourohfour nav ul {
-  font-size: 1.2em;
 }
 
 nav li a svg {
@@ -362,8 +361,10 @@ code[class*="language-html"] {
     height: 15rem;
   }
 
-  .hero nav ul {
-    font-size: 1.4em;
+  .hero nav ul,
+  .fourohfour nav ul {
+    font-size: 1.4rem;
+    --line-height: 1em;
   }
 
   main > h1 {
