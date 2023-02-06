@@ -68,6 +68,13 @@ body {
   flex: 1;
 }
 
+.wrapper > header,
+.wrapper > main,
+.wrapper > footer {
+  padding-top: var(--block-spacing-vertical);
+  padding-bottom: var(--block-spacing-vertical);
+}
+
 .site-title {
   font-size: 1.2rem;
 }
@@ -81,7 +88,6 @@ body {
   background: var(--under-page-background) url(/assets/hero.jpg) no-repeat 0% 0% /
     cover;
   height: 12rem;
-  margin-bottom: 2rem;
 }
 
 .hero .site-title {

@@ -20,7 +20,9 @@ layout: base.njk
   }
 </style>
 
-<header class="hero" data-theme="dark">{% include 'nav.njk' %}</header>
+<div class="hero" data-theme="dark">
+  {% include 'nav.njk' %}
+</div>
 
 <main class="container">
   {{ content | safe }}
