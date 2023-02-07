@@ -129,14 +129,19 @@ nav li a svg {
   border-radius: 50%;
 }
 
-.icon-date {
+[class*="icon-"] {
   padding-left: 1.5em;
-  background: var(--icon-date) center left/1em auto no-repeat;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  background-size: 1em auto;
+}
+
+.icon-date {
+  background-image: var(--icon-date);
 }
 
 .icon-time {
-  padding-left: 1.5em;
-  background: var(--icon-time) center left/1em auto no-repeat;
+  background-image: var(--icon-time);
 }
 
 code,
