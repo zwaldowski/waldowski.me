@@ -12,6 +12,8 @@ updated: 2023-02-06
 
 A tireless problem-solver with a decade of passion for great software that delights the user. Advising and elevating team members at all experience levels. Maintaining and modernizing code to deliver uncompromising excellence. "Seriously scary" depth of experience in implementation, pitfalls, and years-past fixes.
 
+<a href="/assets/resume.pdf" role="button">Download PDF</a>
+
 </article>
 <article>
 
