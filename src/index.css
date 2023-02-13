@@ -85,8 +85,8 @@ body {
 }
 
 .hero {
-  background: var(--under-page-background) url(/assets/hero.jpg) no-repeat 0% 0% /
-    cover;
+  background: linear-gradient(to bottom, black 1%, transparent 20%),
+    url(/assets/hero.jpg) no-repeat 0% 0% / cover;
   height: 12rem;
 }
 
@@ -106,13 +106,8 @@ body {
   animation-delay: var(--typing-duration);
 }
 
-.hero nav {
-  background: linear-gradient(to bottom, black 22%, transparent 100%);
-}
-
 .fourohfour {
-  background: var(--under-page-background) url(/assets/404.jpg) no-repeat 0% 50% /
-    cover;
+  background: url(/assets/404.jpg) no-repeat 0% 50% / cover;
   height: 18rem;
   margin-bottom: 2rem;
 }
