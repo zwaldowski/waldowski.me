@@ -32,7 +32,7 @@ A tireless, passionate problem-solver building delightful software for over a de
 
 ## Experience
 
-- **2021-Present** — Senior Platform Architect, Big Nerd Ranch; Atlanta, GA
+- **2021-Present** — Senior Solution Architect, Big Nerd Ranch; Atlanta, GA
 
   Providing deep understanding and expertise for clients on iOS. Modernizing and delivering features in product with 2,000,000+ active users. Leading the vanguard of best practices and adopting new technologies.
 
