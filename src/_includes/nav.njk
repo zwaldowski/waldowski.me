@@ -7,7 +7,7 @@
     </li>
   </ul>
   <ul>
-    {% for link in links %}
+    {% for slug, link in links %}
       <li>
         <a
           href="{{ link.href }}"
