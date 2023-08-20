@@ -1,5 +1,5 @@
 ---
-title: Blog Philosophy
+title: (Not a) Blog Philosophy
 date: 2023-01-15
 ---
 
