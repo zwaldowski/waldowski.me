@@ -7,21 +7,23 @@ layout: base.njk
   <header>
     <hgroup>
       <h1 class="p-name">{{ title }}</h1>
-      <p>
-        <span class="icon-date"
-          >Published&nbsp;<date class="dt-published" datetime="{{ date.toISOString() }}">
-            {{- date | dateMedium -}}
-          </date></span
-        >
-        {% if updated %}
-          <br>
-          <span class="icon-time"
-            >Updated&nbsp;<date class="dt-updated" datetime="{{ updated.toISOString() }}">
-              {{- updated | dateMedium -}}
+      {% if date %}
+        <p>
+          <span class="icon-date"
+            >Published&nbsp;<date class="dt-published" datetime="{{ date.toISOString() }}">
+              {{- date | dateString(dateStyle="medium") -}}
             </date></span
           >
-        {% endif %}
-      </p>
+          {% if updated %}
+            <br>
+            <span class="icon-time"
+              >Updated&nbsp;<date class="dt-updated" datetime="{{ updated.toISOString() }}">
+                {{- updated | dateString(dateStyle="medium") -}}
+              </date></span
+            >
+          {% endif %}
+        </p>
+      {% endif %}
     </hgroup>
   </header>
   <div class="e-content">

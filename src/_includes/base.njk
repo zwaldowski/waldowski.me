@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#075985">
     <meta name="twitter:dnt" content="on">
     <link rel="stylesheet" href="/index.css">
     <link rel="icon" type="image/jpeg" href="{{ meta.email | avatar("16") }}" sizes="16x16">
@@ -12,8 +13,6 @@
     {% seo "" %}
   </head>
   <body>
-    <section class="wrapper">
-      {{ content | safe }}
-    </section>
+    {{ content | safe }}
   </body>
 </html>

@@ -14,65 +14,15 @@
   }
 }
 
-@keyframes hidden {
-  0% {
-    visibility: hidden;
-  }
-
-  100% {
-    visibility: hidden;
-  }
-}
-
 :root {
-  --background-light: var(--primary-hover);
-  --background-dark: #075985;
+  --theme-dark-background: #075985;
+  --theme-dark-muted-color: #9ca3af;
+  --border-radius: 1.5em;
 }
 
-/* Light scheme (Default) */
-[data-theme="light"],
-:root:not([data-theme="dark"]) {
-  --under-page-background: var(--background-light);
-  --code-background-color: #18232c;
-  --code-color: #d4d4d4;
-}
-
-/* Dark scheme (Auto)  */
-@media only screen and (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --code-color: #d4d4d4;
-    --under-page-background: var(--background-dark);
-  }
-}
-
-/* Dark scheme (Forced) */
-[data-theme="dark"] {
-  --under-page-background: var(--background-dark);
-  --code-color: #d4d4d4;
-}
-
+:root,
 body {
-  background-color: var(--under-page-background);
-  min-height: 100%;
-  min-height: 100lvh;
-  display: flex;
-  flex-direction: column;
-}
-
-.wrapper {
-  background-color: var(--background-color);
-  overflow: hidden;
-  margin: 0.625rem 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  flex: 1;
-}
-
-.wrapper > header,
-.wrapper > main,
-.wrapper > footer {
-  padding-top: var(--block-spacing-vertical);
-  padding-bottom: var(--block-spacing-vertical);
+  height: 100%;
 }
 
 .site-title {
@@ -84,44 +34,42 @@ body {
   animation: blink 1.5s infinite alternate;
 }
 
-.hero {
-  background: linear-gradient(to bottom, black 1%, transparent 20%),
-    url(/assets/hero.jpg) no-repeat 0% 0% / cover;
-  height: 12rem;
+.hello {
+  background: var(--theme-dark-background);
+  --muted-color: var(--theme-dark-muted-color);
 }
 
-.hero .site-title {
-  --typing-duration: 2s;
-  animation: hidden var(--typing-duration);
+.hello .container {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-rows: 4rem;
 }
 
-.hero .site-title:before {
-  content: "\0200B";
-  position: absolute;
-  visibility: visible;
-  animation-duration: var(--typing-duration);
+.hello h1 {
+  --font-size: 4rem;
+  grid-row: 1 / 3;
+  grid-column: 1;
+  line-height: 1em;
+  letter-spacing: -1px;
+  z-index: 1;
 }
 
-.hero .site-title:after {
-  animation-delay: var(--typing-duration);
+.hello img {
+  grid-row: 2 / 4;
+  grid-column: 1;
+  border-radius: 3em;
+}
+
+.hello hgroup {
+  grid-row: 4;
+  grid-column: 1;
+  margin-bottom: 0;
 }
 
 .fourohfour {
   background: url(/assets/404.jpg) no-repeat 0% 50% / cover;
   height: 18rem;
   margin-bottom: 2rem;
-}
-
-nav li a svg {
-  fill: currentColor;
-  width: 1em;
-}
-
-.u-photo {
-  float: left;
-  margin: 0 1em 1em 0;
-  border: 2px solid var(--contrast);
-  border-radius: 50%;
 }
 
 [class*="icon-"] {
@@ -139,12 +87,35 @@ nav li a svg {
   background-image: var(--icon-time);
 }
 
+#affiliations {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#affiliations a {
+  display: block;
+}
+
 code,
 kbd,
 pre,
 samp {
   --font-family: ui-monospace, "SFMono-Regular", "SF Mono", monospace,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+dd nav ul,
+dd nav ol {
+  margin-top: 0;
+  display: flex;
+}
+
+dd nav li {
+  padding-top: 0;
+}
+
+dd nav li a svg {
+  fill: currentColor;
+  width: 2.5em;
 }
 
 .namespace {
@@ -355,25 +326,50 @@ code[class*="language-html"] {
   color: #808080;
 }
 
-@media (min-width: 640px) {
-  .wrapper {
-    border-radius: 0.5rem;
-    margin: 0.625rem 1rem 1rem 1rem;
-  }
-}
-
 @media (min-width: 768px) {
-  .hero {
-    height: 15rem;
+  .hello {
+    height: 95%;
+    height: 95svh;
   }
 
-  .hero nav ul,
-  .fourohfour nav ul {
-    font-size: 1.4rem;
-    --line-height: 1em;
+  .hello .container {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    height: 100%;
+  }
+
+  .hello h1 {
+    --font-size: 5rem;
+    grid-row: 1;
+    grid-column: 1 / 5;
+  }
+
+  .hello img {
+    grid-row: 1 / 3;
+    grid-column: 3 / 7;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hello hgroup {
+    grid-row: 2;
+    grid-column: 1 / 3;
+    align-self: end;
   }
 
   main > h1 {
     font-size: 3em;
+  }
+}
+
+@media (min-width: 992px) {
+  #experience {
+    grid-template-columns: auto 25%;
+    align-items: start;
+  }
+
+  #affiliations {
+    grid-template-columns: 1fr;
   }
 }

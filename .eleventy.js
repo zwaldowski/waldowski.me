@@ -33,10 +33,11 @@ module.exports = function (eleventyConfig) {
     return `https://gravatar.com/avatar/${hash}.jpg${search}`
   })
 
-  eleventyConfig.addFilter("dateMedium", function (date) {
+  eleventyConfig.addFilter("dateString", function (input, options) {
+    const date = new Date(input)
     return date.toLocaleDateString(this.ctx.meta.lang, {
-      dateStyle: "medium",
       timeZone: "UTC",
+      ...options
     })
   })
 
@@ -51,8 +52,6 @@ module.exports = function (eleventyConfig) {
   )
 
   return {
-    markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk",
     dir: {
       input: "src",
     },

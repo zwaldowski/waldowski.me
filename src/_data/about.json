@@ -1,0 +1,31 @@
+{
+    "name": {
+        "type": "p-name",
+        "label": "Name",
+        "value": "Zachary Waldowski"
+    },
+    "role": {
+        "type": "p-job-title",
+        "label": "Role",
+        "value": "Mobile Software Developer"
+    },
+    "email": {
+        "type": "u-email",
+        "label": "Email",
+        "value": "zach@waldowski.me"
+    },
+    "phone": {
+        "type": "p-tel",
+        "label": "Phone",
+        "value": "+1 (843) 333-6836"
+    },
+    "location": {
+        "type": "p-adr",
+        "label": "Location",
+        "value": "Atlanta, GA, USA"
+    },
+    "interests": {
+        "label": "Interests",
+        "value": "Gaming, Cooking, Traveling"
+    }
+}

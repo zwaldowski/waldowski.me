@@ -4,7 +4,7 @@
   "description": "Personal blog",
   "repository": {
     "type": "git",
-    "url": "git://github.com/zwaldowski/waldowski.me.git"
+    "url": "https://github.com/zwaldowski/waldowski.me"
   },
   "license": "MIT",
   "author": "Zachary Waldowski <zach@waldowski.me>",

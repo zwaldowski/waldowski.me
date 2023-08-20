@@ -1,32 +1,122 @@
 ---
 layout: base.njk
 ---
-<style type="text/css">
-  {% set steps = meta.title | length %}
-  @keyframes typing { {% for i in range(1, steps + 1) %}
-    {{ (i * 100.0 / steps) | round }}% {
-      content: "{{ meta.title.slice(0, i) }}";
-    }
+<header class="hello h-card" data-theme="dark">
+  <div class="container">
+    <h1>
+      The best imitation of myself<a
+        href="https://itunes.apple.com/us/album/best-imitation-of-myself/771779576?i=771779689"
+        title="(It’s from a song.)"
+        >.</a
+      >
+    </h1>
+    <img src="/assets/hello.jpg" class="u-photo">
+    <hgroup>
+      <h2 class="u-name">{{ about.name.value }}</h2>
+      <p class="p-title">{{ about.role.value }}</p>
+    </hgroup>
+  </div>
+</header>
+<main class="container h-resume">
+  <section aria-label="About">
+    <article class="grid">
+      <aside class="p-contact">
+        <dl>
+          {% for slug, entry in about %}
+            <dt>{{ entry.label }}</dt>
+            <dd
+              {%- if entry.type %}
+                class="{{ entry.type }}"
+              {% endif %}
+            >
+              <p>
+                {{ entry.value }}
+              </p>
+            </dd>
+          {% endfor %}
+          <dt>Social</dt>
+          <dd>
+            <nav>
+              <ul>
+                {% for slug, link in links %}
+                  <li>
+                    <a
+                      href="{{ link.href }}"
+                      title="{{ link.title }}"
+                      {%- if link.rel %}
+                        rel="{{ link.rel }}"
+                      {% endif %}
+                    >
+                      {{ link.svg | safe }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </nav>
+          </dd>
+        </dl>
+      </aside>
+      <div class="p-summary">
+        {{ content | safe }}
+      </div>
+    </article>
+  </section>
+  <h2>Skills</h2>
+  <ul>
+    {% for entry in resume.skills %}
+      <li
+        class="p-skill"
+        {%- if entry.keywords %}
+          title="{{ entry.keywords | join(", ") }}"
+        {% endif %}
+      >
+        {{ entry.value | typography }}
+      </li>
     {% endfor %}
-  }
-
-  .hero .site-title {
-    animation-timing-function: steps({{ steps }});
-  }
-
-  .hero .site-title:before {
-    animation-name: typing;
-    animation-timing-function: steps({{ steps }});
-  }
-</style>
-
-<div class="hero" data-theme="dark">
-  {% include 'nav.njk' %}
-</div>
-
-<main class="container">
-  {{ content | safe }}
-
+  </ul>
+  <h2>Experience</h2>
+  <div id="experience" class="grid">
+    <div>
+      <ul>
+        {% for entry in resume.experience %}
+          <li class="p-experience h-event">
+            <p>
+              <strong
+                ><time class="dt-start" datetime="{{ entry.start }}">
+                  {{- entry.start | dateString(year="numeric") -}}</time
+                >-
+                {%- if entry.end -%}
+                  <time class="dt-end" datetime="{{ entry.end }}">
+                    {{- entry.end | dateString(year="numeric") -}}
+                  </time>
+                {% else -%}
+                  Present
+                {% endif %}
+              </strong>
+              — <span class="p-title">{{ entry.title }}</span>,
+              <span class="h-card"
+                ><span class="p-name p-org">{{ entry.org }}</span>;
+                <span class="p-location">{{ entry.location }}</span></span
+              >
+            </p>
+            <p class="p-summary">{{ entry.summary | typography }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+      <a href="{{ links.linkedin.href }}" role="button">See on LinkedIn {{ links.linkedin.svg | safe }}</a>
+    </div>
+    <aside id="affiliations" class="grid">
+      {% for entry in resume.affiliations %}
+        <p class="p-affiliation h-card">
+          <a href="{{ entry.href }}" title="{{ entry.title }}" class="contrast p-name p-url">
+            {{ entry.svg | safe }}
+          </a>
+        </p>
+      {% endfor %}
+    </aside>
+  </div>
+</main>
+<section class="container">
   <article class="h-feed">
     <header>
       <hgroup>
@@ -55,4 +145,5 @@ layout: base.njk
       {% endfor %}
     </ol>
   </article>
-</main>
+</section>
+<footer class="container"></footer>
