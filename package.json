@@ -13,14 +13,14 @@
     "build": "NODE_ENV=production eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0-beta.2",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
-    "@picocss/pico": "^1.5.6",
-    "@shopify/prettier-plugin-liquid": "^1.0.3",
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@picocss/pico": "^1.5.10",
+    "@shopify/prettier-plugin-liquid": "^1.2.2",
     "eleventy-plugin-activity-pub": "^0.1.1",
     "eleventy-plugin-seo": "^0.5.2",
-    "html-minifier-terser": "^7.1.0",
-    "lightningcss": "^1.18.0",
+    "html-minifier-terser": "^7.2.0",
+    "lightningcss": "^1.21.5",
     "markdown-it": "^13.0.1",
     "prettier": "^2.8.2"
   },
