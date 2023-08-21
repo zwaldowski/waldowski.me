@@ -103,7 +103,9 @@ layout: base.njk
           </li>
         {% endfor %}
       </ul>
-      <a href="{{ links.linkedin.href }}" role="button">See on LinkedIn {{ links.linkedin.svg | safe }}</a>
+      <p>
+        <a href="{{ links.linkedin.href }}" role="button">See on LinkedIn {{ links.linkedin.svg | safe }}</a>
+      </p>
     </div>
     <aside id="affiliations" class="grid">
       {% for entry in resume.affiliations %}

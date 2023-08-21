@@ -41,8 +41,8 @@ body {
 
 .hello .container {
   display: grid;
-  grid-gap: 1.5rem;
-  grid-template-rows: 4rem;
+  grid-gap: 2.5em;
+  grid-template-rows: 4em;
 }
 
 .hello h1 {
@@ -87,12 +87,12 @@ body {
   background-image: var(--icon-time);
 }
 
-#affiliations {
-  grid-template-columns: 1fr 1fr 1fr;
+#experience {
+  grid-row-gap: 2em;
 }
 
-#affiliations a {
-  display: block;
+#affiliations {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 code,
@@ -335,6 +335,7 @@ code[class*="language-html"] {
   .hello .container {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(6, 1fr);
+    grid-gap: 3.75em;
     height: 100%;
   }
 
@@ -366,7 +367,6 @@ code[class*="language-html"] {
 @media (min-width: 992px) {
   #experience {
     grid-template-columns: auto 25%;
-    align-items: start;
   }
 
   #affiliations {
