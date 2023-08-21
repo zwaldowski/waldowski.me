@@ -1,5 +1,4 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
-const { createHash } = require("crypto")
 const activitypub = require("eleventy-plugin-activity-pub")
 const seo = require("eleventy-plugin-seo")
 const markdownIt = require("markdown-it")
@@ -24,14 +23,6 @@ module.exports = function (eleventyConfig) {
         return bDate - aDate
       })
   )
-
-  eleventyConfig.addFilter("avatar", function (email, size) {
-    const hash = createHash("md5")
-      .update(email.trim().toLowerCase())
-      .digest("hex")
-    const search = size ? `?s=${size}` : ""
-    return `https://gravatar.com/avatar/${hash}.jpg${search}`
-  })
 
   eleventyConfig.addFilter("dateString", function (input, options) {
     const date = new Date(input)
