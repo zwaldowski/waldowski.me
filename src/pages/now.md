@@ -2,7 +2,7 @@
 title: Now
 description: What I'm up to and what I'm enjoying.
 date: 2023-02-05
-updated: 2023-06-05
+updated: 2023-08-21
 ---
 
 > Most websites have a link that says "about"... a website with a link that says “now” goes to a page that tells you what this person is focused on at this point in their life. ([nownownow.com](https://nownownow.com/about))
@@ -13,29 +13,24 @@ Still making iPhone and iPad apps that people remember for [Big Nerd Ranch](http
 
 ### 🎧 Listening
 
-- [_What Matters Most_ by Ben Folds](https://music.apple.com/us/album/what-matters-most/1668213049)
-- [_Random Access Memories (10th Anniversary Edition)_ by Daft Punk](https://music.apple.com/us/album/random-access-memories-10th-anniversary-edition/1673536063)
-- [_KIWANUKA_ by Michael Kiwanuka](https://music.apple.com/us/album/kiwanuka/1474357932)
+- [_The Ballad Of Darren_ by Blur](https://music.apple.com/us/album/the-ballad-of-darren/1688020024)
+- [_The Age of Pleasure_ by Janelle Monáe](https://music.apple.com/us/album/the-age-of-pleasure/1686979040)
+- [_Bending Hectic - Single_ by The Smile](https://music.apple.com/us/album/bending-hectic-single/1690036090)
 - [My Brother, My Brother And Me](https://podcasts.apple.com/us/podcast/my-brother-my-brother-and-me/id367330921)
-- [_The Coldest Case In Laramie_ by Serial](https://podcasts.apple.com/us/podcast/serial/id917918570)
 - [99% Invisible](https://podcasts.apple.com/us/podcast/99-invisible/id394775318)
 
 ### 📺 Watching
 
-- [Ted Lasso](https://tv.apple.com/us/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy)
-- [Summer Games Done Quick 2023](http://twitch.tv/gamesdonequick)
+- [The Bear](https://www.hulu.com/series/the-bear-05eb6a8e-90ed-4947-8c0b-e6536cbddd5f)
 - [Taskmaster](https://www.youtube.com/@Taskmaster)
-- [Last Night in Soho](https://tv.apple.com/us/movie/last-night-in-soho/umc.cmc.4rbun3ykj26t4lfh3kmemvx18)
+- [Futurama](https://www.hulu.com/series/futurama-85bf4cc1-cd8b-4469-ad87-7289217a0b74)
 - [Silo](https://tv.apple.com/us/show/silo/umc.cmc.3yksgc857px0k0rqe5zd4jice)
 
-### 📚 Reading
-
-- [_Project Hail Mary_ by Andy Weir](https://books.apple.com/us/book/project-hail-mary/id1526997052)
-- [_The Darkness Outside Us_ by Eliot Schrefer](https://books.apple.com/us/book/the-darkness-outside-us/id1529862268)
-- [_You've Got Red on You: How Shaun of the Dead Was Brought to Life_ by Clark Colis](https://books.apple.com/us/book/youve-got-red-on-you/id1575359450)
+<!-- ### 📚 Reading -->
 
 ### 🎮 Playing
 
-- [The Outer Worlds: Spacer's Choice Edition](https://store.playstation.com/en-us/concept/10004825)
-- [Star Wars Jedi: Fallen Order](https://store.playstation.com/en-us/concept/232345)
-- [Hitman: Freelancer](https://store.playstation.com/en-us/concept/10000248)
+- [The Legend of Zelda: Tears of the Kingdom](https://www.nintendo.com/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/)
+- [Baldur’s Gate 3](https://store.steampowered.com/app/1086940/Baldurs_Gate_3)
+- [Fallout 76](https://www.xbox.com/en-us/games/fallout-76)
+- [Starfield](https://www.xbox.com/en-us/games/store/starfield-premium-edition/9nlgbhlswxm8)
