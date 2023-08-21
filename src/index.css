@@ -14,6 +14,26 @@
   }
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(-25%);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-up {
+  0% {
+    transform: translateY(33%);
+    opacity: 0;
+  }
+}
+
 :root {
   --theme-dark-background: #075985;
   --theme-dark-muted-color: #9ca3af;
@@ -52,18 +72,21 @@ body {
   line-height: 1em;
   letter-spacing: -1px;
   z-index: 1;
+  animation: 1.25s fade-in-left backwards;
 }
 
 .hello img {
   grid-row: 2 / 4;
   grid-column: 1;
   border-radius: 3em;
+  animation: 2s fade-in backwards;
 }
 
 .hello hgroup {
   grid-row: 4;
   grid-column: 1;
   margin-bottom: 0;
+  animation: 1.5s fade-in-up backwards;
 }
 
 .fourohfour {
