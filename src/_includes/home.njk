@@ -84,7 +84,7 @@ layout: base.njk
               <strong
                 ><time class="dt-start" datetime="{{ entry.start }}">
                   {{- entry.start | dateString(year="numeric") -}}</time
-                >-
+                >–
                 {%- if entry.end -%}
                   <time class="dt-end" datetime="{{ entry.end }}">
                     {{- entry.end | dateString(year="numeric") -}}
