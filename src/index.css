@@ -141,6 +141,12 @@ dd nav li a svg {
   width: 2.5em;
 }
 
+[data-tooltip]::before,
+[data-tooltip]::after {
+  letter-spacing: normal;
+  line-height: normal;
+}
+
 .namespace {
   opacity: 0.7;
 }
