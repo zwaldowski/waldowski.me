@@ -1,0 +1,4 @@
+{
+  "layout": "single.njk",
+  "permalink": "{{ title | slugify }}/"
+}

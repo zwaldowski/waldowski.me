@@ -1,4 +1,3 @@
-.glitchdotcom.json
-build
-node_modules
-web_modules
+_site/
+.DS_Store
+node_modules/

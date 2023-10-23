@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="{{ meta.lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="twitter:dnt" content="on">
+    <link rel="stylesheet" href="/pico.css">
+    <link rel="stylesheet" href="/custom.css">
+    <link rel="icon" type="image/jpeg" href="{{ meta.email | avatar("16") }}" sizes="16x16">
+    <link rel="icon" type="image/jpeg" href="{{ meta.email | avatar("32") }}" sizes="32x32">
+    <link rel="apple-touch-icon" type="image/jpeg" href="{{ meta.email | avatar("180") }}" sizes="180x180">
+    {% seo "" %}
+  </head>
+  <body>
+    <div class="wrapper">
+      {{ content | safe }}
+    </div>
+  </body>
+</html>
