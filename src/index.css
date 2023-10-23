@@ -357,8 +357,8 @@ code[class*="language-html"] {
 
 @media (min-width: 768px) {
   .hello {
-    height: 95%;
-    height: 95svh;
+    height: 100%;
+    height: 100svh;
   }
 
   .hello .container {
