@@ -1,0 +1,21 @@
+{
+  "name": "zwaldowski.github.io",
+  "version": "2022.2.13",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "NODE_ENV=production eleventy"
+  },
+  "dependencies": {
+    "eleventy-plugin-seo": "^0.5.2"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=16.12"
+  },
+  "glitch": {
+    "projectType": "generated_static"
+  },
+  "license": "MIT"
+}

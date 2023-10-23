@@ -1,0 +1,196 @@
+:root {
+  --font-family: system-ui, "Helvetica Neue", Helvetica, sans-serif;
+  --under-page-background: #011432;
+  --under-page-color: #ffffff;
+  --page-background: #ffffff;
+  --page-color: #4e5157;
+  --heading-color: #1c1b1d;
+  --accent-color: #607890;
+  --page-margin-h: 2px;
+  --page-margin-v: 10px;
+  --page-margin: var(--page-margin-v) var(--page-margin-h);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-background: #1c1c1e;
+    --page-color: #aaa6a0;
+    --heading-color: #ffffff;
+    --accent-color: #7e9ebd;
+  }
+}
+
+@supports (margin: max(0rem)) {
+  :root {
+    --page-margin: max(var(--page-margin-v), env(safe-area-inset-top))
+      max(var(--page-margin-h), env(safe-area-inset-right))
+      max(var(--page-margin-v), env(safe-area-inset-bottom))
+      max(var(--page-margin-h), env(safe-area-inset-left));
+  }
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Page structure */
+body {
+  font-family: var(--font-family);
+  background: var(--under-page-background)
+    url(https://cdn.glitch.global/131a8a69-9134-4914-b943-50e9fb9a2015/bg.jpg?v=1644714780719)
+    no-repeat fixed 50% 50% / cover;
+  color: var(--under-page-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
+}
+
+.wrapper {
+  margin: var(--page-margin);
+  max-width: 1000px;
+  box-shadow: 12px 18px 24px rgba(0, 0, 0, 0.6);
+  padding: 30px 22px;
+  background: var(--page-background);
+  color: var(--page-color);
+}
+
+/* Typography */
+p {
+  margin: 0 0 1.25rem 0;
+  line-height: 1.5;
+  font-size: 1.125rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 1.875rem 0 1.25rem 0;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--heading-color);
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.375rem;
+}
+small {
+  font-size: 0.8rem;
+}
+ul, ol {
+  padding: 0.625rem 0 1.25rem 1.25rem;
+  margin: 0;
+}
+ul > li,
+ol > li {
+  margin-bottom: 0.625rem;
+  line-height: 1.1;
+  font-size: 1rem;
+}
+
+/* Link styles */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+a:hover, a:focus {
+  text-decoration: underline 0.125em;
+}
+
+/* Content */
+.content {
+    font-size: 1.125rem;
+}
+
+/* Layout: Page */
+.h-card p {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.h-card hgroup {
+  margin-top: 1.875rem;
+}
+
+.h-card hgroup > * {
+  display: inline;
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+
+.h-card h1 {
+  margin-left: 5px;
+}
+
+.h-card h1:after {
+  content: ",";
+}
+
+.h-card h2 {
+  font-weight: normal;
+  color: inherit;
+}
+
+.h-card a {
+  color: inherit;
+}
+
+.h-card img {
+  border-radius: 50%;
+  border: 2px solid var(--heading-color);
+}
+
+.home .content h1:first-of-type {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.875rem;
+}
+
+.home .content h1:after {
+  content: ".";
+  color: var(--accent-color);
+}
+
+/* Media */
+@media (min-width: 375px) {
+  :root {
+    --page-margin-h: 10px;
+    --page-margin-v: 28px;
+  }
+}
+
+@media (min-width: 767px) {
+  .wrapper {
+    padding: 50px;
+  }
+  
+  ul, ol {
+    padding: 0 0 0 2.5rem;
+  }
+  
+  ul > li,
+  ol > li {
+    margin-left: 1.25rem;
+  }
+  
+  .h-card p {
+    margin-bottom: 2rem;
+  }
+  
+  .home .content h1:first-of-type {
+    width: 85%;
+    font-size: 5.5rem;
+    margin: 3.125rem 0;
+  }
+}

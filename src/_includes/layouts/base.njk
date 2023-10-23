@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ metadata.lang }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="{{ "/public/style.css" | url }}" />
+    <link rel="icon" type="image/jpeg" href="{{ metadata.email | gravatar("32") }}" />
+    {% seo "" %}
+    <meta name="twitter:dnt" content="on">
+    {% for link in links | selectattr("rel") -%}
+    <link rel="me" href="{{ link.href }}">
+    {% endfor -%}
+  </head>
+  <body>
+    <div class="wrapper">
+      {{ content | safe }}
+    </div>
+  </body>
+</html>
