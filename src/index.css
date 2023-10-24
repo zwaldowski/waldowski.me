@@ -359,6 +359,7 @@ code[class*="language-html"] {
   .hello {
     height: 100%;
     height: 100svh;
+    min-height: fit-content;
   }
 
   .hello .container {
@@ -366,6 +367,7 @@ code[class*="language-html"] {
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 3.75em;
     height: 100%;
+    min-height: fit-content;
   }
 
   .hello h1 {
