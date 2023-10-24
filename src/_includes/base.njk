@@ -5,33 +5,22 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <!-- SEO -->
-    {% set pageTitle -%}
-    {%- if title %}{{ title }} - {% endif -%}
-    {{- meta.title -}}
-    {%- endset -%}
-    {% set pageDescription -%}
-    {{- description or meta.description -}}
-    {%- endset -%}
-    <title>{{ pageTitle }}</title>
-    <meta property="og:title" content="{{ pageTitle }}">
-    <meta name="description" content="{{ pageDescription }}">
-    <meta property="og:description" content="{{ pageDescription }}">
-    <meta property="og:type" content="{{ ogtype or "article" }}">
+    <title>
+      {% if title %}{{ title }} - {% endif %}
+      {{ meta.title }}
+    </title>
+    <meta name="description" property="og:description" content="{{ description or meta.description }}">
+    <meta property="og:type" content="{{ ogtype or "website" }}">
     <meta property="og:image" content="{{ image or meta.image }}">
     <meta name="theme-color" content="{{ meta.themeColor }}">
     <meta name="generator" content="{{ eleventy.generator }}">
     <meta name="format-detection" content="telephone=no">
-    <meta name="author" content="{{ meta.author }}">
+    <meta name="author" content="{{ author or meta.author }}">
     {% for name, content in meta.verification -%}
       <meta name="{{ name }}-verification" content="{{ content }}">
     {%- endfor %}
     <!-- Links -->
-    {% set pageURL -%}
-    {{- meta.url -}}
-    {{- page.url -}}
-    {%- endset -%}
-    <meta property="og:url" content="{{ pageURL }}">
-    <link rel="canonical" href="{{ pageURL }}">
+    <link rel="canonical" href="{{ meta.url }}{{ page.url }}">
     <link rel="stylesheet" href="/index.css">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">

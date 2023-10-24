@@ -2,7 +2,6 @@
 layout: home.njk
 eleventyExcludeFromCollections: true
 permalink: /
-ogtype: website
 ---
 
 Howdy!
