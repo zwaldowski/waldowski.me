@@ -27,6 +27,7 @@ module.exports = (eleventyConfig) => {
       collapseWhitespace: true,
       decodeEntities: true,
       minifyCSS: true,
+      removeComments: true
     })
   })
 }

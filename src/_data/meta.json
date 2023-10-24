@@ -13,5 +13,9 @@
       "username": "zw",
       "domain": "mastodon.social"
     }
+  },
+  "themeColor": "#075985",
+  "verification": {
+    "proven-lol": "proven2f0123"
   }
 }

@@ -1,13 +1,11 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
 const activitypub = require("eleventy-plugin-activity-pub")
-const seo = require("eleventy-plugin-seo")
 const markdownIt = require("markdown-it")
 const minify = require("./config/minify.js")
 const meta = require("./src/_data/meta.json")
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(activitypub, meta.activitypub)
-  eleventyConfig.addPlugin(seo, meta)
   eleventyConfig.addPlugin(minify)
   eleventyConfig.addPlugin(syntaxHighlight)
 
