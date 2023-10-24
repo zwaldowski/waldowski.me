@@ -71,7 +71,7 @@ layout: base.njk
           title="{{ entry.keywords | join(", ") }}"
         {% endif %}
       >
-        {{ entry.value | typography }}
+        {{ entry.value | typography | safe }}
       </li>
     {% endfor %}
   </ul>
@@ -100,7 +100,7 @@ layout: base.njk
                 <span class="p-location">{{ entry.location }}</span></span
               >
             </p>
-            <p class="p-summary">{{ entry.summary | typography }}</p>
+            <p class="p-summary">{{ entry.summary | typography | safe }}</p>
           </li>
         {% endfor %}
       </ul>
@@ -135,7 +135,7 @@ layout: base.njk
           <a href="{{ post.url }}" class="u-url p-name">{{ post.data.title }}</a>
           {% if post.data.description -%}
             <br>
-            <span class="p-summary">{{ post.data.description | typography }}</span>
+            <span class="p-summary">{{ post.data.description | typography | safe }}</span>
           {%- endif %}
           <data class="dt-published" value="{{ post.date.toISOString() }}" />
           {%- if post.updated -%}
