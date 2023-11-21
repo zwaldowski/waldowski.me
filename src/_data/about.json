@@ -7,7 +7,7 @@
     "role": {
         "type": "p-job-title",
         "label": "Role",
-        "value": "Mobile Software Developer"
+        "value": "Mobile Software Engineer"
     },
     "email": {
         "type": "u-email",
@@ -22,7 +22,7 @@
     "location": {
         "type": "p-adr",
         "label": "Location",
-        "value": "Atlanta, GA, USA"
+        "value": "San Diego, CA, USA"
     },
     "interests": {
         "label": "Interests",

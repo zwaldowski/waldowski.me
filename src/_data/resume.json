@@ -53,6 +53,13 @@
     ],
     "experience": [
         {
+            "start": "2023-11-06",
+            "title": "Software Engineer",
+            "org": "Apple",
+            "location": "San Diego, CA",
+            "summary": "Building world-class applications across all of Apple’s platforms. Adding features for upcoming releases, prototyping new features, and ensuring an outstanding user experience. Deep interaction with UIKit, SwiftUI, and adapting to evolving designs. Collaborating and partnering across iOS, macOS, and watchOS teams. Exploring new technologies to deliver high-quality software."
+        },
+        {
             "start": "2021-08-01",
             "end": "2023-10-17",
             "title": "Senior Solution Architect",
