@@ -37,7 +37,7 @@
 :root {
   --theme-dark-background: #075985;
   --theme-dark-muted-color: #9ca3af;
-  --border-radius: 1.5em;
+  --pico-border-radius: 1.5em;
 }
 
 :root,
@@ -49,14 +49,18 @@ body {
   font-size: 1.2rem;
 }
 
-.site-title:after {
+.site-title:not(:hover, :active, :focus) {
+  text-decoration: none;
+}
+
+.site-title:not(:hover, :active, :focus):after {
   content: "_";
   animation: blink 1.5s infinite alternate;
 }
 
 .hello {
   background: var(--theme-dark-background);
-  --muted-color: var(--theme-dark-muted-color);
+  --pico-muted-color: var(--theme-dark-muted-color);
 }
 
 .hello .container {
@@ -66,13 +70,17 @@ body {
 }
 
 .hello h1 {
-  --font-size: 4rem;
+  --pico-font-size: 4rem;
   grid-row: 1 / 3;
   grid-column: 1;
   line-height: 1em;
   letter-spacing: -1px;
   z-index: 1;
   animation: 1.25s fade-in-left backwards;
+}
+
+.hello h1 a {
+  text-decoration: none;
 }
 
 .hello img {
@@ -89,7 +97,7 @@ body {
   animation: 1.5s fade-in-up backwards;
 }
 
-.fourohfour {
+.four-oh-four {
   background: url(/assets/404.jpg) no-repeat 0% 50% / cover;
   height: 18rem;
   margin-bottom: 2rem;
@@ -103,11 +111,11 @@ body {
 }
 
 .icon-date {
-  background-image: var(--icon-date);
+  background-image: var(--pico-icon-date);
 }
 
 .icon-time {
-  background-image: var(--icon-time);
+  background-image: var(--pico-icon-time);
 }
 
 #experience {
@@ -118,17 +126,8 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-code,
-kbd,
-pre,
-samp {
-  --font-family: ui-monospace, "SFMono-Regular", "SF Mono", monospace,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 dd nav ul,
 dd nav ol {
-  margin-top: 0;
   display: flex;
 }
 
@@ -139,6 +138,13 @@ dd nav li {
 dd nav li a svg {
   fill: currentColor;
   width: 2.5em;
+}
+
+body > header,
+body > main,
+body > footer,
+section {
+  --pico-block-spacing-vertical: calc(var(--pico-spacing) * 2);
 }
 
 [data-tooltip]::before,
@@ -355,7 +361,31 @@ code[class*="language-html"] {
   color: #808080;
 }
 
+@media (min-width: 576px) {
+  body > header,
+  body > main,
+  body > footer,
+  section {
+    --pico-block-spacing-vertical: calc(var(--pico-spacing) * 2.5);
+  }
+
+  article {
+    --pico-block-spacing-horizontal: calc(var(--pico-spacing) * 1.25);
+  }
+}
+
 @media (min-width: 768px) {
+  body > header,
+  body > main,
+  body > footer,
+  section {
+    --pico-block-spacing-vertical: calc(var(--pico-spacing) * 3);
+  }
+
+  article {
+    --pico-block-spacing-horizontal: calc(var(--pico-spacing) * 1.5);
+  }
+
   .hello {
     height: 100%;
     height: 100svh;
@@ -371,7 +401,7 @@ code[class*="language-html"] {
   }
 
   .hello h1 {
-    --font-size: 5rem;
+    --pico-font-size: 5rem;
     grid-row: 1;
     grid-column: 1 / 5;
   }
@@ -393,14 +423,42 @@ code[class*="language-html"] {
   main > h1 {
     font-size: 3em;
   }
+
+  #experience {
+    grid-template-columns: 1fr;
+  }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
+  body > header,
+  body > main,
+  body > footer,
+  section {
+    --pico-block-spacing-vertical: calc(var(--pico-spacing) * 3.5);
+  }
+
+  article {
+    --pico-block-spacing-horizontal: calc(var(--pico-spacing) * 1.75);
+  }
+
   #experience {
     grid-template-columns: auto 25%;
   }
 
   #affiliations {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1280px) {
+  body > header,
+  body > main,
+  body > footer,
+  section {
+    --pico-block-spacing-vertical: calc(var(--pico-spacing) * 4);
+  }
+
+  article {
+    --pico-block-spacing-horizontal: calc(var(--pico-spacing) * 2);
   }
 }
