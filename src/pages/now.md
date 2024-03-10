@@ -2,38 +2,36 @@
 title: Now
 description: What I'm up to and what I'm enjoying.
 date: 2023-02-05
-updated: 2023-11-21
+updated: 2024-03-10
 ---
 
 > Most websites have a link that says "about"... a website with a link that says "now" goes to a page that tells you what this person is focused on at this point in their life.
 >
-> <footer><cite><a href="https://nownownow.com/about">nownownow.com</a></cite></footer>
+> <footer><cite>— <a href="https://nownownow.com/about">nownownow.com</a></cite></footer>
 
-### 👨🏻‍💻 Living
+### <span role="img">👨🏻‍💻</span> Lived
 
-Starting a new job working on the [Journal app](https://www.apple.com/ios/ios-17/) for iPhone. My awesome partner and I just moved to San Diego, CA, USA for this role. I'm overwhelmed by this opportunity to help people get to know themselves better — including myself!
+Settling into my new job working on the [Journal app](https://www.apple.com/ios/ios-17/) for iPhone. My awesome partner and I moved to San Diego, CA, USA for this role. I'm overwhelmed by this opportunity to help people get to know themselves better — including myself!
 
-### 🎧 Listening
+### <span role="img">🎧</span> [Listened](https://music.apple.com/us/playlist/heavy-rotation-mix/pl.pm-20e9f373919da080800a7a491cc89210)
 
-- [_Chronicles of a Diamond_ by Black Pumas](https://music.apple.com/us/album/chronicles-of-a-diamond/1700349203)
-- [_Now And Then_ by The Beatles](https://music.apple.com/us/album/now-and-then-single/1713197371)
-- [_Everything Not Saved Will Be Lost_ by Foals](https://music.apple.com/us/album/everything-not-saved-will-be-lost-part-i/1551376342)
-- [_Yoshimi Battles the Pink Robots (20th Anniversary Deluxe Edition)_ by The Flaming Lips](https://music.apple.com/us/album/yoshimi-battles-the-pink-robots-20th-anniversary/1650861915)
+- [_Wall of Eyes_ by The Smile](https://music.apple.com/us/album/wall-of-eyes/1711359135)
+- [_What Now_ by Brittany Howard](https://music.apple.com/us/album/what-now/1709596906)
+- [_yes, and? - Single_ by Ariana Grande & Mariah Carey](https://music.apple.com/us/album/yes-and-single/1730547597)
 - [My Brother, My Brother And Me](https://podcasts.apple.com/us/podcast/my-brother-my-brother-and-me/id367330921)
 - [99% Invisible](https://podcasts.apple.com/us/podcast/99-invisible/id394775318)
 
-### 📺 Watching
+### <span role="img">📺</span> Watched
 
+- [For All Mankind](https://tv.apple.com/us/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7)
+- [Abbott Elementary](https://www.hulu.com/series/abbott-elementary)
 - [Taskmaster](https://www.youtube.com/@Taskmaster)
-- [Lessons in Chemistry](https://tv.apple.com/us/show/lessons-in-chemistry/umc.cmc.40yycssgxelw4zur8m2ilmvyx)
-- [Silo](https://tv.apple.com/us/show/silo/umc.cmc.3yksgc857px0k0rqe5zd4jice)
-- [Futurama](https://www.hulu.com/series/futurama-85bf4cc1-cd8b-4469-ad87-7289217a0b74)
+- [Star Trek: Lower Decks](https://tv.apple.com/us/show/star-trek-lower-decks/umc.cmc.3pcgb865v09usl6nqkoi10gu1)
+- [The Truman Show](https://tv.apple.com/us/movie/the-truman-show/umc.cmc.3thpf98o5diknnctdycef69fu)
 
-<!-- ### 📚 Reading -->
+<!-- ### <span role="img">📚</span> Read -->
 
-### 🎮 Playing
+### <span role="img">🎮</span> Played
 
-- [Super Mario Bros. Wonder](https://www.nintendo.com/us/store/products/super-mario-bros-wonder-switch/)
-- [Starfield](https://www.xbox.com/en-us/games/store/starfield-premium-edition/9nlgbhlswxm8)
+- [Baldur’s Gate 3](https://store.playstation.com/en-us/concept/10007460)
 - [The Legend of Zelda: Tears of the Kingdom](https://www.nintendo.com/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/)
-- [Baldur’s Gate 3](https://store.steampowered.com/app/1086940/Baldurs_Gate_3)
