@@ -139,6 +139,7 @@ dd nav li {
 dd nav li a svg {
   fill: currentColor;
   width: 2.5em;
+  height: 2.5em;
 }
 
 body > header,
@@ -146,6 +147,10 @@ body > main,
 body > footer,
 section {
   --pico-block-spacing-vertical: calc(var(--pico-spacing) * 2);
+}
+
+nav {
+  align-items: first baseline;
 }
 
 [data-tooltip]::before,
