@@ -1,8 +1,8 @@
 ---
-layout: base.njk
+layout: base.liquid
 ogType: article
 ---
-{% include 'nav.njk' %}
+{% include 'nav' %}
 
 <main class="container h-entry">
   <header>
@@ -11,15 +11,15 @@ ogType: article
       {% if date %}
         <p>
           <span class="icon-date"
-            >Published&nbsp;<date class="dt-published" datetime="{{ date.toISOString() }}">
-              {{- date | dateString(dateStyle="medium") -}}
+            >Published&nbsp;<date class="dt-published" datetime="{{ date | date: '%Y-%m-%d', 0 }}">
+              {{- date | date: '%-m/%-d/%Y', 0 -}}
             </date></span
           >
           {% if updated %}
             <br>
             <span class="icon-time"
-              >Updated&nbsp;<date class="dt-updated" datetime="{{ updated.toISOString() }}">
-                {{- updated | dateString(dateStyle="medium") -}}
+              >Updated&nbsp;<date class="dt-updated" datetime="{{ updated | date: '%Y-%m-%d', 0 }}">
+                {{- updated | date: '%-m/%-d/%Y', 0 -}}
               </date></span
             >
           {% endif %}
@@ -28,6 +28,6 @@ ogType: article
     </hgroup>
   </header>
   <div class="e-content">
-    {{ content | safe }}
+    {{ content }}
   </div>
 </main>

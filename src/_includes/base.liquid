@@ -9,16 +9,20 @@
       {% if title %}{{ title }} - {% endif -%}
       {{ meta.title }}
     </title>
-    <meta name="description" property="og:description" content="{{ description or meta.description }}">
-    <meta property="og:type" content="{{ ogtype or "website" }}">
-    <meta property="og:image" content="{{ image or meta.image }}">
+    <meta
+      name="description"
+      property="og:description"
+      content="{{ description | default: meta.description | typography }}"
+    >
+    <meta property="og:type" content="{{ ogtype | default: "website" }}">
+    <meta property="og:image" content="{{ image | default: meta.image }}">
     <meta name="color-scheme" content="light dark">
     <meta name="theme-color" content="{{ meta.themeColor }}">
     <meta name="generator" content="{{ eleventy.generator }}">
     <meta name="format-detection" content="telephone=no">
-    <meta name="author" content="{{ author or meta.author }}">
-    {% for name, content in meta.verification -%}
-      <meta name="{{ name }}-verification" content="{{ content }}">
+    <meta name="author" content="{{ author | default: meta.author }}">
+    {% for item in meta.verification -%}
+      <meta name="{{ item[0] }}-verification" content="{{ item[1] }}">
     {%- endfor %}
     <!-- Links -->
     <link rel="canonical" href="{{ meta.url }}{{ page.url }}">
@@ -28,6 +32,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
   </head>
   <body>
-    {{ content | safe }}
+    {{ content }}
   </body>
 </html>

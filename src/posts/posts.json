@@ -1,5 +1,7 @@
 {
-  "layout": "single.njk",
-  "tags": ["posts"],
+  "layout": "single.liquid",
+  "tags": [
+    "posts"
+  ],
   "permalink": "{{ title | slugify }}/"
 }

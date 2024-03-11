@@ -1,5 +1,5 @@
 ---
-layout: home.njk
+layout: home.liquid
 eleventyExcludeFromCollections: true
 permalink: /
 ---

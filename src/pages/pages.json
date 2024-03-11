@@ -1,4 +1,4 @@
 {
-  "layout": "single.njk",
+  "layout": "single.liquid",
   "permalink": "{{ title | slugify }}/"
 }

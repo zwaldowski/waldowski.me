@@ -22,14 +22,6 @@ module.exports = function (eleventyConfig) {
       }),
   )
 
-  eleventyConfig.addFilter("dateString", function (input, options) {
-    const date = new Date(input)
-    return date.toLocaleDateString(this.ctx.meta.lang, {
-      timeZone: "UTC",
-      ...options
-    })
-  })
-
   const markdown = new markdownIt({
     html: true,
     typographer: true,
