@@ -94,10 +94,10 @@ layout: base.njk
                   Present
                 {% endif %}
               </strong>
-              — <span class="p-title">{{ entry.title }}</span>,
-              <span class="h-card"
-                ><span class="p-name p-org">{{ entry.org }}</span>;
-                <span class="p-location">{{ entry.location }}</span></span
+              — <span class="p-title">{{ entry.title }}</span><br>
+              <small class="h-card"
+                ><span class="p-name p-org">{{ entry.org }}</span> ·
+                <span class="p-location">{{ entry.location }}</span></small
               >
             </p>
             <p class="p-summary">{{ entry.summary | typography | safe }}</p>
