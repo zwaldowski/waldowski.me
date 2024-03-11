@@ -19,7 +19,7 @@ module.exports = function (eleventyConfig) {
         const aDate = a.data.updated ?? a.date
         const bDate = b.data.updated ?? b.date
         return bDate - aDate
-      })
+      }),
   )
 
   eleventyConfig.addFilter("dateString", function (input, options) {
@@ -37,7 +37,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setLibrary("md", markdown)
   eleventyConfig.addFilter("typography", (input) =>
-    markdown.renderInline(input)
+    markdown.renderInline(input),
   )
 
   return {
