@@ -1,6 +1,7 @@
 ---
 title: Repeatable UUIDs
 date: 2019-02-27T23:23:00Z
+updated: 2024-03-04
 ---
 
 I recently wanted to identify the records coming from a server to apply [uniqueness constraints](https://developer.apple.com/videos/play/wwdc2015/220/?time=613) while caching them locally using [Core Data](https://developer.apple.com/documentation/coredata). The rub with this, as it often seems to be with APIs I consume, is having data with no unique identifier as a sub-structure of some larger payload that _is_ uniquely identified. For instance, a blog post will have an ID, but a taxonomy on that blog post won’t:
@@ -48,53 +49,51 @@ UUID(uuid: (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)) // => 00000000-0000
 UUID(uuid: (0x00, 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x99, 0x99, 0xAA, 0xBB, 0xCC, 0xDD, 0xEE, 0xFF)) // => 00112233-4455-6677-9999-AABBCCDDEEFF
 ```
 
-If we’re looking to do cryptographic hashing, look no further than [`CommonCrypto`](https://developer.apple.com/library/archive/documentation/Security/Conceptual/cryptoservices/Introduction/Introduction.html). In Xcode 10.2 (beta at time of writing), you can finally `import CommonCrypto` without doing any gymnastics. It’s a C library, but because of Swift’s pointer bridging, you can squint really hard and pretend it’s not.
+If we’re looking to do cryptographic hashing, look no further than [CryptoKit](https://developer.apple.com/documentation/cryptokit).
 
 ```swift
-import CommonCrypto
+import CryptoKit
 
-var context = CC_SHA1_CTX()
-CC_SHA1_Init(&context)
+var context = Insecure.SHA1()
 ```
 
 Given some separate `namespace: UUID`, combine its raw bytes (those 16 `UInt8`) into the hasher:
 
 ```swift
-_ = withUnsafeBytes(of: namespace.uuid) { (buffer) in
-    CC_SHA1_Update(&context, buffer.baseAddress, CC_LONG(buffer.count))
+withUnsafeBytes(of: namespace.uuid) { bufferPointer in
+    context.update(bufferPointer: bufferPointer)
 }
 ```
 
-And do the same with a `value: String`, bridging it to C.
+And do the same with the UTF-8 bytes of a `value: String`.
 
 ```swift
-_ = value.withCString { (cString) in
-    CC_SHA1_Update(&context, cString, CC_LONG(strlen(cString)))
+context.update(data: Data(value.utf8))
+```
+
+Now, output the hash into a fixed-length array. There are lots of ways to do this bit; `Array` is probably a more logical one, or `Data`, but both of those require some amount of dealing with pointers.
+
+```swift
+// truncate to first 16
+var bytes = context.finalize().withUnsafeBytes {
+    ($0[0], $0[1], $0[2], $0[3],
+     $0[4], $0[5], $0[6], $0[7],
+     $0[8], $0[9], $0[10], $0[11],
+     $0[12], $0[13], $0[14], $0[15])
 }
-```
-
-Now,output the hash into a sized array. There are lots of ways to do this bit; `Data` is probably a more logical one, or you can even write out your own `(UInt8, …)`, but both of those require more code.
-
-```swift
-var array = [UInt8](repeating: 0, count: Int(CC_SHA1_DIGEST_LENGTH))
-CC_SHA1_Final(&array, &context)
-```
-
-With the hash done, according to the RFC4122, we should to twiddle some specific bits to discourage code that is aware of the certain formats from trying to parse it as theirs. In terms of the hex representation `xxxxxxxx-xxxx-Yxxx-Zxxx-xxxxxxxxxxxx`, we want `Y` to read `5` (version 5) and `Z` to read `8`, `9`, `A`, or `B` (its upper bits indicating that it’s generated according to RFC4122).
-
-```swift
-array[6] = (array[6] & 0x0F) | 0x50 // set version number nibble to 5
-array[8] = (array[8] & 0x3F) | 0x80 // reset clock nibbles to indicate RFC4122
 ```
 
 And we have our 16 bytes! (Actually 20, but we’re obliged to ignore the rest.)
 
 ```swift
-// truncate to first 16
-let uuid = UUID(uuid: (array[0], array[1], array[2], array[3],
-                       array[4], array[5], array[6], array[7],
-                       array[8], array[9], array[10], array[11],
-                       array[12], array[13], array[14], array[15]))
+bytes.6 = (bytes.6 & 0x0F) | 0x50 // set version number nibble to 5
+bytes.8 = (bytes.8 & 0x3F) | 0x80 // reset clock nibbles to indicate RFC4122
+```
+
+With the hash done, according to the RFC4122, we should twiddle some specific bits to discourage code that is aware of the certain formats from trying to parse it as theirs. In terms of the hex representation `xxxxxxxx-xxxx-Yxxx-Zxxx-xxxxxxxxxxxx`, we want `Y` to read `5` (version 5) and `Z` to read `8`, `9`, `A`, or `B` (its upper bits indicating that it’s generated according to RFC4122).
+
+```swift
+let uuid = UUID(uuid: bytes)
 ```
 
 Wrap that up into a nice initializer (mine is `UUID(hashing:inNamespace:)`, the naming logic of which could be a whole other post) and generate yourself some namespaces. Finally, I can do this magic trick where I guess what your UUID is going to be!
