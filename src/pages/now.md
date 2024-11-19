@@ -2,7 +2,7 @@
 title: Now
 description: What I'm up to and what I'm enjoying.
 date: 2023-02-05
-updated: 2024-03-10
+updated: 2024-11-18
 ---
 
 > Most websites have a link that says "about"... a website with a link that says "now" goes to a page that tells you what this person is focused on at this point in their life.
@@ -11,27 +11,32 @@ updated: 2024-03-10
 
 ### <span role="img">👨🏻‍💻</span> Lived
 
-Settling into my new job working on the [Journal app](https://www.apple.com/ios/ios-17/) for iPhone. My awesome partner and I moved to San Diego, CA, USA for this role. I'm overwhelmed by this opportunity to help people get to know themselves better — including myself!
+I've started my second year working on the [Journal app](https://www.apple.com/ios/ios-18/) for iPhone. I remain grateful for this opportunity to help people take stock of themselves and get to know themselves better — and that includes myself!
+
+ My awesome partner and I just bought a house in Vista, CA, USA where we occupy our [gray tabby Bucky](/assets/uploads/2024/bucky.jpg) with an endless stream of felt mice.
 
 ### <span role="img">🎧</span> [Listened](https://music.apple.com/us/playlist/heavy-rotation-mix/pl.pm-20e9f373919da080800a7a491cc89210)
 
-- [_Wall of Eyes_ by The Smile](https://music.apple.com/us/album/wall-of-eyes/1711359135)
-- [_What Now_ by Brittany Howard](https://music.apple.com/us/album/what-now/1709596906)
-- [_yes, and? - Single_ by Ariana Grande & Mariah Carey](https://music.apple.com/us/album/yes-and-single/1730547597)
+- [_Cutouts_ by The Smile](https://music.apple.com/us/album/cutouts/1758065392)
+- [_The Rise and Fall of a Midwest Princess_ by Chappell Roan](https://music.apple.com/us/album/the-rise-and-fall-of-a-midwest-princess/1698723205)
+- [_Small Changes_ by Michael Kiwanuka](https://music.apple.com/us/album/small-changes/1765573122)
 - [My Brother, My Brother And Me](https://podcasts.apple.com/us/podcast/my-brother-my-brother-and-me/id367330921)
-- [99% Invisible](https://podcasts.apple.com/us/podcast/99-invisible/id394775318)
+- [Dragon Age: Vows & Vengeance](https://podcasts.apple.com/us/podcast/dragon-age-vows-vengeance/id1752014282)
 
 ### <span role="img">📺</span> Watched
 
-- [For All Mankind](https://tv.apple.com/us/show/for-all-mankind/umc.cmc.6wsi780sz5tdbqcf11k76mkp7)
+- [The Diplomat](https://www.netflix.com/title/81288983)
 - [Abbott Elementary](https://www.hulu.com/series/abbott-elementary)
+- [Presumed Innocent](https://tv.apple.com/us/show/presumed-innocent/umc.cmc.5hnqrhwtzt3esr7rb1wq2ppvn)
 - [Taskmaster](https://www.youtube.com/@Taskmaster)
-- [Star Trek: Lower Decks](https://tv.apple.com/us/show/star-trek-lower-decks/umc.cmc.3pcgb865v09usl6nqkoi10gu1)
-- [The Truman Show](https://tv.apple.com/us/movie/the-truman-show/umc.cmc.3thpf98o5diknnctdycef69fu)
 
-<!-- ### <span role="img">📚</span> Read -->
+### <span role="img">📚</span> Read
+
+- [_Artificial Condition_ by Martha Wells](https://books.apple.com/us/book/artificial-condition/id1279281658)
+- [_All Systems Red_ by Martha Wells](https://books.apple.com/us/book/all-systems-red/id1185556142)
+- [_The Long Way to a Small, Angry Planet_ by Becky Chambers](https://books.apple.com/us/book/the-long-way-to-a-small-angry-planet/id1006676782)
 
 ### <span role="img">🎮</span> Played
 
-- [Baldur’s Gate 3](https://store.playstation.com/en-us/concept/10007460)
-- [The Legend of Zelda: Tears of the Kingdom](https://www.nintendo.com/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/)
+- [Dragon Age: The Veilguard](https://store.playstation.com/en-us/concept/10000586)
+- [Astro Bot](https://store.playstation.com/en-us/concept/10002684)
