@@ -1,6 +1,6 @@
 {
   "name": "waldowski.me",
-  "version": "2023.1.16",
+  "version": "2024.11.18",
   "description": "Personal blog",
   "repository": {
     "type": "git",
@@ -13,13 +13,13 @@
     "build": "NODE_ENV=production eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@picocss/pico": "^2.0.6",
     "eleventy-plugin-activity-pub": "^0.1.1",
     "html-minifier-terser": "^7.2.0",
-    "lightningcss": "^1.22.0",
-    "markdown-it": "^13.0.2"
+    "lightningcss": "^1.28.1",
+    "markdown-it": "^14.1.0"
   },
   "engines": {
     "node": ">=16"
@@ -27,5 +27,6 @@
   "glitch": {
     "projectType": "generated_static",
     "buildDirectory": "_site"
-  }
+  },
+  "type": "module"
 }

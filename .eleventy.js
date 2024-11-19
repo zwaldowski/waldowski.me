@@ -1,11 +1,11 @@
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
-const activitypub = require("eleventy-plugin-activity-pub")
-const markdownIt = require("markdown-it")
-const minify = require("./config/minify.js")
-const meta = require("./src/_data/meta.json")
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight"
+import activityPub from "eleventy-plugin-activity-pub"
+import markdownIt from "markdown-it"
+import minify from "./config/minify.js"
+import meta from "./src/_data/meta.js"
 
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(activitypub, meta.activitypub)
+export default function (eleventyConfig) {
+  eleventyConfig.addPlugin(activityPub, meta.activityPub)
   eleventyConfig.addPlugin(minify)
   eleventyConfig.addPlugin(syntaxHighlight)
 
@@ -31,10 +31,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("typography", (input) =>
     markdown.renderInline(input),
   )
+}
 
-  return {
-    dir: {
-      input: "src",
-    },
-  }
+export const config = {
+  dir: {
+    input: "src",
+  },
 }

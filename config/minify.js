@@ -1,14 +1,14 @@
-const htmlmin = require("html-minifier-terser")
-const lightning = require("lightningcss")
+import { minify } from "html-minifier-terser"
+import { bundle } from "lightningcss"
 
-module.exports = (eleventyConfig) => {
+export default (eleventyConfig) => {
   const isProduction = process.env.NODE_ENV === "production"
 
   eleventyConfig.addTemplateFormats("css")
   eleventyConfig.addExtension("css", {
     outputFileExtension: "css",
     compile: (content, filename) => () => {
-      const result = lightning.bundle({
+      const result = bundle({
         filename,
         code: Buffer.from(content),
         minify: isProduction,
@@ -23,7 +23,7 @@ module.exports = (eleventyConfig) => {
       return content
     }
 
-    return await htmlmin.minify(content, {
+    return await minify(content, {
       collapseWhitespace: true,
       decodeEntities: true,
       minifyCSS: true,
