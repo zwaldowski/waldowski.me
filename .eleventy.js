@@ -1,11 +1,8 @@
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight"
-import activityPub from "eleventy-plugin-activity-pub"
 import markdownIt from "markdown-it"
 import minify from "./config/minify.js"
-import meta from "./src/_data/meta.js"
 
 export default function (eleventyConfig) {
-  eleventyConfig.addPlugin(activityPub, meta.activityPub)
   eleventyConfig.addPlugin(minify)
   eleventyConfig.addPlugin(syntaxHighlight)
 
