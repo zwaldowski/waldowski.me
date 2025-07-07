@@ -118,6 +118,10 @@ layout: base.liquid
       {% endfor %}
     </aside>
   </div>
+  <data
+    class="dt-updated"
+    value="{{ page.date | date: '%Y-%m-%d', 0 }}"
+  />
 </main>
 <section class="container">
   <article class="h-feed">
@@ -126,7 +130,7 @@ layout: base.liquid
         <h2>
           <data class="p-name" value="Notes by {{ meta.author }}">Notes</data>
         </h2>
-        <p class="p-summary">Not quite posts. More like digital leftovers.</p>
+        <p class="p-summary">Not posts. More like digital leftovers.</p>
       </hgroup>
     </header>
     <ol reversed>
