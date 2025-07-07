@@ -11,7 +11,11 @@ export default function (eleventyConfig) {
   eleventyConfig.addCollection("home", (collections) =>
     collections
       .getAll()
-      .filter((a) => a.data.title)
+      .filter((a) => {
+        if (!a.data.title) return false
+        if (a.data.tags?.includes("archive")) return false
+        return true
+      })
       .sort((a, b) => {
         const aDate = a.data.updated ?? a.date
         const bDate = b.data.updated ?? b.date

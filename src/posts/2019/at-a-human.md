@@ -1,6 +1,7 @@
 ---
 title: At a Human Scale
 date: 2019-01-30T05:33:01Z
+updated: 2023-01-16
 ---
 
 In working through a bug of inefficient I/O use, my mind keeps coming back to [Computer Latency at a Human Scale](https://www.prowesscorp.com/computer-latency-at-a-human-scale/):

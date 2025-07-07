@@ -1,9 +1,9 @@
 ---
-title: (Not a) Blog Philosophy
+title: I Don’t Have a Blog
 date: 2023-01-15
 ---
 
-Above all, I don't want to be doing this.
+Above all, I don't want to have a website.
 
 OK, not really. But what I actually am is indecisive (in all things!), and I have competing urges, like:
 
@@ -12,20 +12,19 @@ OK, not really. But what I actually am is indecisive (in all things!), and I hav
 
 and:
 
-- An allergy to the self-branding of unimpressive technocrats like myself as raconteurs with "hot takes"
+- An allergy to the self-branding of unimpressive technocrats as raconteurs who have "hot takes"
 - Dear lord, [someone is wrong on the internet](https://xkcd.com/386/)
 
 and:
 
-- I really, _really_ don't want to manage web publishing myself
+- I really, _really_ don't want to manage web publishing
 - Being filled with rage by the tools that are supposed to make this easy
 
 This site is the latest in a long tradition of these priorities flip-flopping and turning into something new.
 I don't intend to say much, because I don't have much to say.
 
 I owe a debt of gratitude to [Kyle](https://kylehugh.es) for stealing much of his approach [after a chance conversation on Mastodon](https://mastodon.social/@kyle@mister.computer/109599250472700900).
-I like the idea of having a space on the internet whose goal is to **conciously** remove expectations and barriers of self-confidence in order to be more authentic, even mindful.
-We'll see if it sticks.
+I like the idea of having a space on the internet whose goal is to **consciously** remove expectations and barriers of self-confidence in order to be more authentic, even mindful.
 
 ## The Twitter Era
 
@@ -35,7 +34,7 @@ I was an early adopter, but I was a teenager at the time so it actually became h
 
 ## Finding a Home
 
-If you're someone with a little technical ability, it's _en vogue_ to hyperobsess over your blog as one of a million eternally-unfinished side projects.
+If you're someone with a little technical ability, it's _en vogue_ to hyper-obsess over your blog as one of a million eternally-unfinished side projects.
 (I'm not bitter.)
 I chafe at this for a couple of reasons, the biggest one being the way it leads me down an infinite road of bikeshedding.
 
@@ -43,9 +42,7 @@ I just want to have something _nice_, to free myself up to do the things I actua
 In practice, ticking all those boxes is an exercise in frustration.
 
 - The popular website-in-a-box-tools are largely expressive enough, but their pricing economies suck. I am lucky enough to afford it, but throwing that money in the toilet month after month creates an unhealthy association between guilt and writing/sharing/self-promotion.
-- I'm aware and excited of the growing tooling on the fediverse, I simply don't want to be a sysadmin. If I can sign in to a thing and update Debian packages, I _will_ do it compulsively.
-- Micro.blog did such a good job of abstraction, but that community showed its ass being really petty and insular. Like deciding to take middling native apps and make them worse hybrid apps as a way to "get back" at app stores. I don't actually care that much about the perceived evil of walled gardens, and it simply doesn't make sense to pay into a walled garden I don't like the smell of.
+- I'm aware and excited of the growing tooling on the Fediverse, I simply don't want to be a sysadmin. If I can sign in to a thing and update Debian packages, I _will_ do it compulsively.
+- Micro.blog did such a good job of this abstraction, but found that community really petty and insular. Example: deciding to take their middling-good native apps and make them into worse hybrid apps as a way to "get back" at app stores. I don't actually care that much about the perceived evil of walled gardens, and it simply doesn't make sense to pay into a walled garden I don't like the admins of.
 
 - I'm keeping an eye on [weblog.lol](https://weblog.lol) just because it's so damn cute.
-
-For now, my home is spread between here (for more permanent things) and [Mastodon](https://mastodon.social/@zw) (for more ephemeral things).
