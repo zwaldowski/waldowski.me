@@ -23,9 +23,5 @@
   "engines": {
     "node": ">=16"
   },
-  "glitch": {
-    "projectType": "generated_static",
-    "buildDirectory": "_site"
-  },
   "type": "module"
 }
