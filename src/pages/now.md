@@ -2,7 +2,7 @@
 title: Now
 description: What I'm up to and what I'm enjoying.
 date: 2023-02-05
-updated: 2024-11-18
+updated: 2025-07-06
 ---
 
 > Most websites have a link that says "about"... a website with a link that says "now" goes to a page that tells you what this person is focused on at this point in their life.
@@ -11,32 +11,35 @@ updated: 2024-11-18
 
 ### <span role="img">👨🏻‍💻</span> Lived
 
-I've started my second year working on the [Journal app](https://www.apple.com/ios/ios-18/) for iPhone. I remain grateful for this opportunity to help people take stock of themselves and get to know themselves better — and that includes myself!
+Journal app is [coming to iPad and Mac](https://www.apple.com/os/macos/)! I remain stoked to work on something everyday that helps people get to know themselves better.
 
- My awesome partner and I just bought a house in Vista, CA, USA where we occupy our [gray tabby Bucky](/assets/uploads/2024/bucky.jpg) with an endless stream of felt mice.
+My awesome partner and I continue to live in Vista, CA, USA where we distract our [gray tabby Bucky](/assets/uploads/2024/bucky.jpg) with an endless stream of felt stuffed mice.
 
 ### <span role="img">🎧</span> [Listened](https://music.apple.com/us/playlist/heavy-rotation-mix/pl.pm-20e9f373919da080800a7a491cc89210)
 
-- [_Cutouts_ by The Smile](https://music.apple.com/us/album/cutouts/1758065392)
-- [_The Rise and Fall of a Midwest Princess_ by Chappell Roan](https://music.apple.com/us/album/the-rise-and-fall-of-a-midwest-princess/1698723205)
-- [_Small Changes_ by Michael Kiwanuka](https://music.apple.com/us/album/small-changes/1765573122)
+- [_Symphony of Lungs - BBC Proms_ by Florence + the Machine & Jules Buckley](https://music.apple.com/us/album/symphony-of-lungs-bbc-proms-at-the-royal-albert-hall/1774374954)
+- [_Radio Free Europe 2025 - EP_ by R.E.M.](https://music.apple.com/us/album/radio-free-europe-2025-ep/1810742330)
+- [_This Is Happening (Deluxe Edition)_ by LCD Soundsystem](https://music.apple.com/us/album/this-is-happening-deluxe-edition/734857510)
 - [My Brother, My Brother And Me](https://podcasts.apple.com/us/podcast/my-brother-my-brother-and-me/id367330921)
-- [Dragon Age: Vows & Vengeance](https://podcasts.apple.com/us/podcast/dragon-age-vows-vengeance/id1752014282)
 
 ### <span role="img">📺</span> Watched
 
-- [The Diplomat](https://www.netflix.com/title/81288983)
-- [Abbott Elementary](https://www.hulu.com/series/abbott-elementary)
-- [Presumed Innocent](https://tv.apple.com/us/show/presumed-innocent/umc.cmc.5hnqrhwtzt3esr7rb1wq2ppvn)
+- [Summer Games Done Quick 2025](https://gamesdonequick.com)
+- [Murderbot](https://tv.apple.com/us/show/murderbot/umc.cmc.5owrzntj9v1gpg31wshflud03)
 - [Taskmaster](https://www.youtube.com/@Taskmaster)
+- [E.R.](https://www.max.com/shows/er/92d5fe53-2467-4030-8e81-9b3753afb64e)
 
 ### <span role="img">📚</span> Read
 
-- [_Artificial Condition_ by Martha Wells](https://books.apple.com/us/book/artificial-condition/id1279281658)
-- [_All Systems Red_ by Martha Wells](https://books.apple.com/us/book/all-systems-red/id1185556142)
-- [_The Long Way to a Small, Angry Planet_ by Becky Chambers](https://books.apple.com/us/book/the-long-way-to-a-small-angry-planet/id1006676782)
+- [_System Collapse_ by Martha Wells](https://books.apple.com/us/book/system-collapse/id6448289262)
+- [_The Mercy of Gods_ by James S. A. Corey](https://books.apple.com/us/book/the-mercy-of-gods/id6471949721)
+- [_We Solve Murders_ by Richard Osman](https://books.apple.com/us/book/we-solve-murders/id6474522016)
 
 ### <span role="img">🎮</span> Played
 
+- [The Legend of Zelda: Tears of the Kingdom – Nintendo Switch 2 Edition](https://www.nintendo.com/us/store/products/the-legend-of-zelda-tears-of-the-kingdom-nintendo-switch-2-edition-switch-2/)
+- [Citizen Sleeper 2: Starward Vector](https://www.xbox.com/en-us/games/store/citizen-sleeper-2-starward-vector/9mwcf1xbjbr2)
+- [Assassin's Creed Shadows](https://store.playstation.com/en-us/concept/10009909)
+- [Croc: Legend of the Gobbos](https://store.playstation.com/en-us/concept/10011925)
 - [Dragon Age: The Veilguard](https://store.playstation.com/en-us/concept/10000586)
-- [Astro Bot](https://store.playstation.com/en-us/concept/10002684)
+  <br><small>(I still love you 🥹)</small>
