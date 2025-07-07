@@ -42,7 +42,7 @@
   --theme-dark-background: #075985;
   --theme-dark-muted-color: #9ca3af;
   --pico-border-radius: 1.5em;
-  --pico-spacing: 2rem;
+  --pico-spacing: 1.75rem;
     background: var(--theme-dark-background);
 }
 
@@ -76,7 +76,7 @@ body {
 
 .hello .container {
   display: grid;
-  grid-gap: 2.5em;
+  grid-gap: 1em;
   grid-template-rows: 4em;
 }
 
