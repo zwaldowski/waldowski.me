@@ -2,6 +2,7 @@
 title: Repeatable UUIDs
 date: 2019-02-27T23:23:00Z
 updated: 2024-03-04
+tags: archive
 ---
 
 I recently wanted to identify the records coming from a server to apply [uniqueness constraints](https://developer.apple.com/videos/play/wwdc2015/220/?time=613) while caching them locally using [Core Data](https://developer.apple.com/documentation/coredata). The rub with this, as it often seems to be with APIs I consume, is having data with no unique identifier as a sub-structure of some larger payload that _is_ uniquely identified. For instance, a blog post will have an ID, but a taxonomy on that blog post won’t:

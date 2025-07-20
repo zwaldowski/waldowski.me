@@ -1,6 +1,6 @@
-# waldowski.me (2023)
+# waldowski.me (2023–2025)
 
-It’s that time again. A simple blog iterating on my previous attempts at a [microblog](https://github.com/zwaldowski/microdotblog) and [landing page](https://github.com/zwaldowski/waldowski.me/tree/2019).
+A simple landing page and resume iterating on my previous attempts at a [microblog](https://github.com/zwaldowski/microdotblog) and [blog](https://github.com/zwaldowski/waldowski.me/tree/2019).
 
 ## Tips for forking
 
